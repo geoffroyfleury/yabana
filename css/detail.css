@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav-collapse {
+    background-color: #02f5b89d !important;
+    
+  }
+  
+  .navbar:not(.top-nav-collapse) {
+  background:  #fff !important;
+  }
+  
+  @media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+  background: #02f5b89d !important;
+  }
+  }
+
+
+.navbar-nav .nav-item{
+    margin-left: 30px;
+    
+  }
+  
+  .navbar-nav .nav-item a{
+    letter-spacing: 3px;
+    
+  }
+  .navbar.navbar-dark .navbar-nav .nav-item .nav-link{
+    color: #000 !important;
+  }
+  
+
+.log ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 30px;
+    top: 30%;
+  }
+  
+  .log ul li{
+    text-decoration: none;
+    margin-left: 20px;
+    
+  }
+  
+  .log ul li a i{
+    font-size: 25px;
+    color: rgb(3, 3, 3);
+  }
+
+  /*************************************************************************************************************************************/
+
+  .product{
+    width: 100%;
+    position: relative  ;
+    margin-top: 90px;
+    height: 100vh;
+      
+      
+  }
+
+  
+
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+  .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  /*************************************************************************************************************************************/
+
+  .title-1 h4 {
+    color: rgba(187, 179, 179, 0.938);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .detail{
+    letter-spacing: 2px;
+  }
+
+  .price p{
+    margin-left: 90px;
+    font-weight: bold;
+   letter-spacing: 2px;
+   font-size: 19px;
+   
+  }
+
+  button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    
+  }
+
+  .blanc{
+    box-shadow: 1px 1px 5px 2px #888888;
+  }
+  .taille{
+    margin-top: 40px;
+  }
+
+  .taille ul{
+    display: flex;
+    list-style: none;
+  }
+  .taille ul li{
+    margin-left: 15px;
+    font-weight: bold;
+    color: #25b3eb;
+    font-size:18px;
+    cursor: pointer;
+  }
+
+  .love button{
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 120px;
+    background: #e90e0e;
+  }
+
+  .love button i{
+    color: #fff;
+    margin-left: 5px;
+  }
+  .panier{
+    float: right;
+    width: 250px;
+    height: 40px;
+    background: #02f5b89d;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .panier i{
+    margin-left: 120px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  .livre{
+    margin-top: 60px;
+  }
+
+  .express{
+    margin-top: 30px;
+  }
+
+  .livre i{
+    font-size: 20px;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  /*******************************************************************************************************************************************/
