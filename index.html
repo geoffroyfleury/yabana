@@ -27,7 +27,16 @@
 
     <!--css file-->
     <link rel="stylesheet" href="css/style.css">
-    
+    <script>
+
+        function nextStep(ele) {
+            ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft += 250
+        }
+        function prevStep(ele) {
+            ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft -= 250
+        }
+    </script>
+
 </head>
 
 <body class="woocommerce">
@@ -35,7 +44,7 @@
     <!-- Main navigation -->
     <header>
       <!--Navbar-->
-      
+
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="menu-icon">
           <span></span>
@@ -50,7 +59,7 @@
 <hr class="mb-0">
 
   <!-- Accordion card -->
-  <div class="card">
+  <div class="card" style="">
 
     <!-- Card header -->
     <div class="card-header" role="tab" id="headingTwo1">
@@ -61,15 +70,13 @@
         </h5>
       </a>
     </div>
-
-    <!-- Card body -->
     <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
       data-parent="#accordionEx1">
       <div class="card-body">
         <div class="custom-scrollbar">
           <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <a href="#">Chambre à coucher</a>
+                <a href="#" >Chambre à coucher</a>
                 </li>
               <li class="list-group-item">
                 <a href="#">Salon</a>
@@ -93,18 +100,71 @@
                 <a href="#">Jardin, terasse et balcon</a>
               </li>
               <li class="list-group-item">
-                <a href="#">Buanderie</a>
+                <a href="#" >Buanderie</a>
               </li>
             </ul>
         </div>
-          
+
       </div>
     </div>
 
   </div>
 
-  <hr class="mb-0">
-  <!-- Accordion card -->
+    <div class="card" style="">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingTwo1">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+               aria-expanded="false" aria-controls="collapseTwo1">
+                <h5 class="mb-0">
+                    Meuble <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+             data-parent="#accordionEx1">
+            <div class="card-body">
+                <div class="custom-scrollbar">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="#" >Chambre à coucher</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Salon</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Sale a manger</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Chambre bébé et enfant</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Bureau</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Cuisine</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Sale de bain</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Jardin, terasse et balcon</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" >Buanderie</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <hr class="mb-0"> -->
+    <!-- Accordion card -->
 
   <!-- Accordion card -->
   <div class="card">
@@ -123,7 +183,7 @@
     <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
       data-parent="#accordionEx1">
       <div class="card-body">
-        
+
       </div>
     </div>
 
@@ -149,7 +209,7 @@
     <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
       data-parent="#accordionEx1">
       <div class="card-body">
-       
+
       </div>
     </div>
 
@@ -163,7 +223,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
         <ul class="navbar-nav mr-auto ml-auto">
-          
+
         </ul>
 
         <!-- <form class="form-inline mr-auto ml-auto">
@@ -182,7 +242,7 @@
             </ul>
         </div>
         </div>
-  
+
 </nav>
       <!-- Full Page Intro -->
       <div class="view">
@@ -229,21 +289,21 @@
                           <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" alt="">
                         </div>
 
-                        
+
                       </div>
                       <!-- Add Pagination -->
-                     
+
                     </div>
               </div>
               <!-- <div class="row">
                 <div class="col-md-7 detail" style="height:400px;width:750px;top: 350px;background: red">
-                              
+
                 </div>
               </div> -->
                   </div>
-               
+
               </div>
-              
+
               <!--Grid column-->
             </div>
             <!--Grid row-->
@@ -265,178 +325,184 @@
 
         <body class="woocommerce">
             <div class="container">
-              <ul class="mystyle-products">
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">Sale!</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/v/e/vet%20vang%20(1).u2470.d20160606.t122127.jpg"
-                          />
-                    <h3>Chuột Không Dây Logitech M238 Party</h3>
-                    <span class="price">
+                <div class="head int"><span class="tit">Immobilier</span> <span class="qte">24 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
+                <div class="intent" id="meuble">
+                    <img class="abs prev" onclick="prevStep(this)" src="images/left-arrow.png" alt="">
+                    <img class="abs next" onclick="nextStep(this)" src="images/next%20(1).png" alt="">
+                    <ul class="mystyle-products">
+                        <li class="product">
+                            <a href="detail.html">
+                                <!--span class="onsale">Sale!</span-->
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/v/e/vet%20vang%20(1).u2470.d20160606.t122127.jpg"
+                                />
+                                <h3>Chuột Không Dây Logitech M238 Party</h3>
+                                <span class="price">
                       <del> <span class="amount">399.000 ₫</span> </del>
                       <ins> <span class="amount">269.000 ₫</span> </ins>
                       <span class="sale-tag sale-tag-square">-33%</span>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                   
-                </li> 
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">Sale!</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/a/n/anker%202%20cong%20power%2024w_white%20(1).u2470.d20160609.t094609.jpg"
-                          />
-                    <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
-                    <span class="price">
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+
+                        </li>
+                        <li class="product">
+                            <a href="detail.html">
+                                <span class="onsale">Sale!</span>
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/a/n/anker%202%20cong%20power%2024w_white%20(1).u2470.d20160609.t094609.jpg"
+                                />
+                                <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                                <span class="price">
                       <ins> <span class="amount">439.000 ₫</span> </ins>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                  
-                </li>
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">24h</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/e/x/ex200-1.u425.d20170309.t162916.175240.jpg"
-                          />
-                    <h3>
-                      Totolink EX200 - Bộ Mở Rộng Sóng Wifi Chuẩn N Tốc Độ 300Mbps
-                    </h3>
-          
-                    <span class="price">
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+
+                        </li>
+                        <li class="product">
+                            <a href="detail.html">
+                                <span class="onsale">24h</span>
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/e/x/ex200-1.u425.d20170309.t162916.175240.jpg"
+                                />
+                                <h3>
+                                    Totolink EX200 - Bộ Mở Rộng Sóng Wifi Chuẩn N Tốc Độ 300Mbps
+                                </h3>
+
+                                <span class="price">
                       <del> <span class="amount">299.000 ₫</span> </del>
                       <ins> <span class="amount">233.000 ₫</span> </ins>
                       <span class="sale-tag sale-tag-square">-22%</span>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                  
-                </li>
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">Sale!</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/4/5/450bt_black_angle_03-1606x1606px.u2769.d20170512.t164639.178330.jpg"
-                          />
-                    <h3>Tai Nghe JBL T450BT</h3>
-          
-                    <span class="price">
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+
+                        </li>
+                        <li class="product">
+                            <a href="detail.html">
+                                <span class="onsale">Sale!</span>
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/4/5/450bt_black_angle_03-1606x1606px.u2769.d20170512.t164639.178330.jpg"
+                                />
+                                <h3>Tai Nghe JBL T450BT</h3>
+
+                                <span class="price">
                       <del> <span class="amount">1.600.000 ₫</span> </del>
                       <ins> <span class="amount">1.466.000 ₫</span> </ins>
                       <span class="sale-tag sale-tag-square">-7%</span>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                  
-                </li>
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">Sale!</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/d/s/dsc_0212.u425.d20160408.t134929.jpg"
-                          />
-                    <h3>Phụ Kiện Số/Loa nghe nhạc/Loa Bluetooth</h3>
-                    <span class="price">
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+
+                        </li>
+                        <li class="product">
+                            <a href="detail.html">
+                                <span class="onsale">Sale!</span>
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/d/s/dsc_0212.u425.d20160408.t134929.jpg"
+                                />
+                                <h3>Phụ Kiện Số/Loa nghe nhạc/Loa Bluetooth</h3>
+                                <span class="price">
                       <ins> <span class="amount">750.000 ₫</span> </ins>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                 
-                </li>
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">Sale!</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/d/i/divoom-airbeat-10-black-4_1.jpg"
-                          />
-                    <h3>Loa Di Động Divoom Airbeat 10 3.5W</h3>
-                    <span class="price">
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+
+                        </li>
+                        <li class="product">
+                            <a href="detail.html">
+                                <span class="onsale">Sale!</span>
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/d/i/divoom-airbeat-10-black-4_1.jpg"
+                                />
+                                <h3>Loa Di Động Divoom Airbeat 10 3.5W</h3>
+                                <span class="price">
                       <del> <span class="amount">639.000 ₫</span> </del>
                       <ins> <span class="amount">760.000 ₫</span> </ins>
                       <span class="sale-tag sale-tag-square">-16%</span>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                  
-                </li>
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">Sale!</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/1/4/1454517182000_img_582809_1.jpg"
-                          />
-                    <h3>Máy Ảnh Sony Alpha A6300 + Kit 16-50mm</h3>
-                    <span class="price">
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+
+                        </li>
+                        <li class="product">
+                            <a href="detail.html">
+                                <span class="onsale">Sale!</span>
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/1/4/1454517182000_img_582809_1.jpg"
+                                />
+                                <h3>Máy Ảnh Sony Alpha A6300 + Kit 16-50mm</h3>
+                                <span class="price">
                       <del> <span class="amount">21.990.000 ₫</span> </del>
                       <ins> <span class="amount">27.490.000 ₫</span> </ins>
                       <span class="sale-tag sale-tag-square">-20%</span>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                  <a href="#" class="btn btn-dark btn-circle btn-review" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion ion-ios-move"></i></a>
-                </li>
-                <li class="product">
-                  <a href="detail.html">
-                    <span class="onsale">Sale!</span>
-                    <img
-                          alt=""
-                          class="attachment-shop_catalog "
-                          src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/1/4/1419_02_mypassportformac_hero_png_imgw_1000_1000.u689.d20161214.t120338.15169.jpg"
-                          />
-                    <h3>Ổ Cứng Di Động WD My Passport 1TB (ver 2016)</h3>
-                    <span class="price">
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+                            <a href="#" class="btn btn-dark btn-circle btn-review" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion ion-ios-move"></i></a>
+                        </li>
+                        <li class="product">
+                            <a href="detail.html">
+                                <span class="onsale">Sale!</span>
+                                <img
+                                        alt=""
+                                        class="attachment-shop_catalog "
+                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/1/4/1419_02_mypassportformac_hero_png_imgw_1000_1000.u689.d20161214.t120338.15169.jpg"
+                                />
+                                <h3>Ổ Cứng Di Động WD My Passport 1TB (ver 2016)</h3>
+                                <span class="price">
                       <del> <span class="amount">1.699.000 ₫</span> </del>
                       <ins> <span class="amount">1.890.000 ₫</span> </ins>
                       <span class="sale-tag sale-tag-square">-11%</span>
                     </span>
-                  </a>
-                  <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                    Mua ngay
-                  </a>
-                 
-                </li>
-              </ul>
+                            </a>
+                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
+                                Mua ngay
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+
             </div>
           </body>
-            
+
     </div>
   </div>
 </section>
 
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-<!------------------------------------------------------------------------------------------ secti ------------------------------------------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------------------------ secti ------------------------------------------------------------------------------------------------------------>
 <section class="alt">
   <div class="container">
     <div class="col-md-12 image">
@@ -447,7 +513,7 @@
   </div>
 </section>
 
-<!------------------------------------------------------------------------------------------- secti -----------------------------------------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------------------------- secti ----------------------------------------------------------------------------------------------------------->
 
 <!------------------------------------------------------------------------------------  categorie ------------------------------------------------------------------------------------------------------------------>
 <section class="categorie">
@@ -494,13 +560,13 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
+
                    <div class="col-sm-6 col-lg-4 col-xl-3">
                       <div class="card">
                          <div class="card-img embed-responsive embed-responsive-1by1">
@@ -525,13 +591,13 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
+
                    <div class="col-sm-6 col-lg-4 col-xl-3">
                       <div class="card">
                          <div class="card-img embed-responsive embed-responsive-1by1">
@@ -556,13 +622,13 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
+
                    <div class="col-sm-6 col-lg-4 col-xl-3">
                       <div class="card">
                          <div class="card-img embed-responsive embed-responsive-1by1">
@@ -587,13 +653,13 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
+
                    <div class="col-sm-6 col-lg-4 col-xl-3">
                       <div class="card">
                          <div class="card-img embed-responsive embed-responsive-1by1">
@@ -618,13 +684,13 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
+
                    <div class="col-sm-6 col-lg-4 col-xl-3">
                       <div class="card">
                          <div class="card-img embed-responsive embed-responsive-1by1">
@@ -649,13 +715,13 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
+
                    <div class="col-sm-6 col-lg-4 col-xl-3">
                       <div class="card">
                          <div class="card-img embed-responsive embed-responsive-1by1">
@@ -680,13 +746,13 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
+
                    <div class="col-sm-6 col-lg-4 col-xl-3">
                       <div class="card">
                          <div class="card-img embed-responsive embed-responsive-1by1">
@@ -711,14 +777,14 @@
                                  </a>
                                </li>
                              </ul>
-                           
+
                            </div>
-                          
+
                         </div>
                       </div>
                    </div>
-             
-             
+
+
                 </div>
              </div>
           </div>
@@ -749,13 +815,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -780,13 +846,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -811,13 +877,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -842,13 +908,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -873,13 +939,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -904,13 +970,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -935,13 +1001,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -966,15 +1032,15 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                   </div>
-                </div>  
+                </div>
           </div>
           <div class="tab-pane fade" id="contact-just" role="tabpanel" aria-labelledby="contact-tab-just">
               <div class="container">
@@ -1003,13 +1069,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -1034,13 +1100,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -1065,13 +1131,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -1096,13 +1162,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -1127,13 +1193,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -1158,13 +1224,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -1189,13 +1255,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                      <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="card">
                            <div class="card-img embed-responsive embed-responsive-1by1">
@@ -1220,13 +1286,13 @@
                                     </a>
                                   </li>
                                 </ul>
-                              
+
                               </div>
-                             
+
                            </div>
                         </div>
                      </div>
-               
+
                   </div>
                </div>
           </div>
@@ -1281,19 +1347,19 @@
 
    <div style="background-color: #02f5b89d;">
      <div class="container">
- 
+
        <!-- Grid row-->
        <div class="row py-4 d-flex align-items-center">
- 
+
          <!-- Grid column -->
          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
            <h6 class="mb-0">Get connected with us on social networks!</h6>
          </div>
          <!-- Grid column -->
- 
+
          <!-- Grid column -->
          <div class="col-md-6 col-lg-7 text-center text-md-right">
- 
+
            <!-- Facebook -->
            <a class="fb-ic">
              <i class="fab fa-facebook-f white-text mr-4"> </i>
@@ -1314,38 +1380,38 @@
            <a class="ins-ic">
              <i class="fab fa-instagram white-text"> </i>
            </a>
- 
+
          </div>
          <!-- Grid column -->
- 
+
        </div>
        <!-- Grid row-->
- 
+
      </div>
    </div>
- 
+
    <!-- Footer Links -->
    <div class="container text-center text-md-left mt-5">
- 
+
      <!-- Grid row -->
      <div class="row mt-3 dark-grey-text">
- 
+
        <!-- Grid column -->
        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
- 
+
          <!-- Content -->
          <h6 class="text-uppercase font-weight-bold">Company name</h6>
          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
            consectetur
            adipisicing elit.</p>
- 
+
        </div>
        <!-- Grid column -->
- 
+
        <!-- Grid column -->
        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
- 
+
          <!-- Links -->
          <h6 class="text-uppercase font-weight-bold">Products</h6>
          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -1361,13 +1427,13 @@
          <p>
            <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
          </p>
- 
+
        </div>
        <!-- Grid column -->
- 
+
        <!-- Grid column -->
        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
- 
+
          <!-- Links -->
          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -1383,13 +1449,13 @@
          <p>
            <a class="dark-grey-text" href="#!">Help</a>
          </p>
- 
+
        </div>
        <!-- Grid column -->
- 
+
        <!-- Grid column -->
        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
- 
+
          <!-- Links -->
          <h6 class="text-uppercase font-weight-bold">Contact</h6>
          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -1401,30 +1467,30 @@
            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
          <p>
            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
- 
+
        </div>
        <!-- Grid column -->
- 
+
      </div>
      <!-- Grid row -->
- 
+
    </div>
    <!-- Footer Links -->
- 
+
    <!-- Copyright -->
    <div class="footer-copyright text-center text-black-50 py-3">© 2018 Copyright:
      <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
    </div>
    <!-- Copyright -->
- 
+
  </footer>
  <!-- Footer -->
 
 
 <!------------------------------------------------------------------------------------------ //slide ------------------------------------------------------------------------------------------------------------>
-  
-  
-  
+
+
+
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
@@ -1441,8 +1507,8 @@
             })
           });
         </script>
-        
-        
+
+
 
     <!-- Tooltips -->
     <!-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script> -->
@@ -1461,10 +1527,10 @@
           el: '.swiper-pagination',
           clickable: true,
         },
-       
+
       });
     </script>
-     
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -1474,6 +1540,7 @@
     <!-- MDB core JavaScript -->
     <!-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script> -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
 
 </body>
 

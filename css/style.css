@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Roboto',sans-serif;
 }
@@ -11,8 +13,10 @@ body{
 
 .title{
   /* font-family: 'Courier New', Courier, monospace; */
- 
+
 }
+
+
 
 /*-------------------------------//general---------------------------------*/
 
@@ -48,7 +52,7 @@ header,
 
 .top-nav-collapse {
   background-color: #02f5b89d !important;
-  
+
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -74,7 +78,7 @@ line-height: 1.7;
 
 .fadeInLeft{
     height: 100vh;
-    
+
 }
 
 .navbar{
@@ -110,17 +114,19 @@ line-height: 1.7;
   left: -400px;
   width: 400px;
   height: 100vh;
-  background: rgba(194, 188, 188, 0.397);
+  /*background: rgba(194, 188, 188, 0.397);*/
   transition: .5s;
-  
   box-sizing: border-box;
-  
+  background-color: #353232;
+
 }
 
 .sidebar.active{
   left: 0;
 }
 
+
+/*------------------------------*/
 .menu-icon.active span{
   position: absolute;
   width: calc(100% - 16px);
@@ -148,14 +154,17 @@ line-height: 1.7;
 }
 
 .accordion h5{
-  color: rgb(92, 87, 87);
+  color:white;
+
   font-weight: 100;
   letter-spacing: 2px;
 }
 
 .accordion li a{
   letter-spacing: 3px;
-  color: rgb(92, 87, 87);
+  color:white;
+  font-weight: bold;
+
 }
 
 
@@ -204,7 +213,7 @@ line-height: 1.7;
   height: 120px;
 }
 
-/* 
+/*
 .view .detail{
   position: absolute;
   right: 10%;
@@ -214,7 +223,7 @@ line-height: 1.7;
 .card img{
     height: 160px;
     width: 100%;
-    
+
 }
 
 .fadeInRight{
@@ -450,7 +459,7 @@ img::-moz-selection {
 }
 
 /* Select-------------------------------------------------------------- */
-/* MISC 
+/* MISC
 -------------------------------------------------------------- */
 .pl-1r {
   padding-left: 1rem;
@@ -757,21 +766,52 @@ img.align-center {
 }
 
 .woocommerce .mystyle-products {
+  overflow-x: auto;
+  overflow-y: hidden;
   list-style: none;
+  height: 300px;
   margin: 0;
+  min-width: 100%;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  white-space: nowrap;
+}
+.woocommerce .mystyle-products::-webkit-scrollbar-track
+{
+  display: none;
+}
+.abs{
+  position: absolute;
+  top: 45%;
+  z-index: 999;
+  cursor: pointer;
+  width: 32px;
+}
+.prev{
+  left: -9%;
+}
+.next{
+  right: -9%;
+}
+.woocommerce .mystyle-products::-webkit-scrollbar
+{
+  width: 0px;
+  display: none;
+}
+
+.woocommerce .mystyle-products::-webkit-scrollbar-thumb
+{
+  display: none;
 }
 .woocommerce .mystyle-products.slider-products .product {
   width: auto;
   margin-bottom: 0;
 }
 .woocommerce .mystyle-products .product {
-  width: 25%;
+  width: 250px;
   margin-bottom: 20px;
   position: relative;
-  padding: 20px;
+  padding: 0px 10px;
+  display: inline-block;
   background: #fff;
 }
 .woocommerce .mystyle-products .product:hover {
@@ -953,6 +993,54 @@ img.align-center {
   border-radius: 0;
   background-color: transparent;
 }
+.cardbottom {
+  border-bottom: none
+}
+.intent{
+  position: relative;
+  border-bottom: 1px solid #44474b;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.head.int{
+  position: relative;
+  border-left: 3px solid rgba(2, 137, 97, 0.6);
+  margin: 5px 20px 10px;
+  display: flex;
+}
+.int.head .tit{
+  color: #44474b;
+  font-size: x-large;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-family: Heebo;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+.int.head .qte{
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  font-family: Heebo;
+  text-transform: lowercase;
+  background-color: rgba(2, 137, 97, 0.6);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.int.head .more{
+  color: #555;
+  font-size: small;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: Heebo;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
 .card-img img {
   padding: 15px;
   width: 100%;
@@ -980,14 +1068,14 @@ img.align-center {
 
 .card-body{
   height: 300px;
-  
+
 }
 
 .card .card-body .card-text{
   font-size: 15px !important;
   color: #000;
   font-weight: 100;
-  
+
 }
 
 .card-title{
