@@ -35,6 +35,15 @@
         function prevStep(ele) {
             ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft -= 250
         }
+        function focuss(ele) {
+            if(tra == 1){
+                ele.style.bottom = 0;
+            }
+            else{
+                ele.style.bottom = -10%;
+            }
+
+        }
     </script>
 
 </head>
@@ -244,69 +253,25 @@
         </div>
 
 </nav>
-      <!-- Full Page Intro -->
-      <div class="view">
-        <!-- Mask & flexbox options-->
-        <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-          <!-- Content -->
-          <!-- <div class="container"> -->
-            <!--Grid row-->
-            <div class="row">
-              <!--Grid column-->
-              <div class="col-md-5 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-                <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" style="margin-top:120px;height: 900px">
-              </div>
-              <!--Grid column-->
-              <!--Grid column-->
-              <div class="col-md-7 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
-                  <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwc4478bd8/images/26417363/ACOSTA-TABLE-BASSE-Oslash-82-5-ACOSTA-26417363-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwc4478bd8/images/26417363/ACOSTA-TABLE-BASSE-Oslash-82-5-ACOSTA-26417363-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dwc4478bd8/images/26417363/ACOSTA-TABLE-BASSE-Oslash-82-5-ACOSTA-26417363-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="https://www.alinea.com/dw/image/v2/BCKM_PRD/on/demandware.static/-/Sites-ali_master/default/dw84640fab/images/26471808/ARENO-TABLE-BASSE-ARENO-26471808-F-1.png?sw=982&sh=982&sm=fit" alt="">
-                        </div>
-
-
-                      </div>
-                      <!-- Add Pagination -->
-
-                    </div>
-              </div>
-              <!-- <div class="row">
-                <div class="col-md-7 detail" style="height:400px;width:750px;top: 350px;background: red">
-
+        <div class="containerss">
+            <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
+            <div class="cards-wrapper">
+                <ul class="cards__container">
+                    <li class="box" style="background: url('https://image.freepik.com/photos-gratuite/demon-voiture-sale-moteur-dynamo-au-garage_41043-2638.jpg') center no-repeat;"></li>
+                    <li class="box" style="background: url('https://image.freepik.com/photos-gratuite/femme-robe-verte-chapeau-fond-jaune_1303-10554.jpg')center no-repeat"></li>
+                    <li class="box" style="background: url('https://image.freepik.com/photos-gratuite/homme-travaillant-ordinateur-portable-dans-paysage-pittoresque_23-2148155063.jpg') center no-repeat"></li>
+                    <li class="box" style="background: url('images/3d-rendu-interieur-chambre-moderne-cadre-photo-vierge_1048-6464.jpg') center no-repeat"></li>
+                    <li class="box" style="background: url('images/chambre1.jpg') center no-repeat"></li>
+                    <li class="box box--hide" style="background: url('images/gadgets electroniques.jpg') center no-repeat"></li>
+                    <li class="box box--hide" style="background: url('images/maquette-cadres-dans-salon_23-2147968613.jpg') center no-repeat"></li>
+                </ul>
+                <div class="card__text-content">
+                    <h3 class="card__title">Yabana</h3>
+                    <div class="card__summary"> L'Immobilier, notre Affaire</div>
                 </div>
-              </div> -->
-                  </div>
-
-              </div>
-
-              <!--Grid column-->
             </div>
-            <!--Grid row-->
+            <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+        </div>
           </div>
           <!-- Content -->
         </div>
@@ -323,7 +288,7 @@
     <h1 class="title">Bonne nouvelle les solds!!!</h1>
     <div>
 
-        
+
             <div class="containers p-40">
                 <div class="head int"><span class="tit">Immobilier</span> <span class="qte">24 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
                 <div class="intent" id="meuble">
@@ -1016,7 +981,7 @@
     <h3 class="title">Interieur resplandissant</h3>
     <p>Le juste parfais pour votre maison :-)</p>
       <a href="#" class="link"><p> decouvrir</p></a>
-    
+
   </div>
 </section>
 
@@ -1027,17 +992,17 @@
 
 <section class="meubles">
   <div class="all-1">
-   
+
     <div>
             <div class="container">
               <ul class="mystyle-products">
                 <li class="product ">
-                 
+
                     <img  alt=""  class="attachment-shop_catalog no"  src="https://www.ikea.com/PIAimages/0710981_PE727863_S5.JPG?f=xs"
                           />
                     <h3>Chuột Không Dây Logitech M238 Party</h3>
                     <span class="price">
-                    
+
                       <ins> <span class="amount">269.000 Fcfa</span> </ins>
                       <a href="detail.html">
                         <span class="view" style="position:absolute;right:70px;">
@@ -1047,10 +1012,10 @@
                       <span class="add" style="position:absolute;right:25px;">
                         <img src="images/shopping-bags.png" style="width:30px;height:30px;">
                       </span>
-                      
+
                     </span>
-                  
-                </li> 
+
+                </li>
                 <li class="product">
                     <img
                           alt=""
@@ -1069,12 +1034,12 @@
                         <img src="images/shopping-bags.png" style="width:30px;height:30px;">
                       </span>
                     </span>
-                 
-                  
+
+
                 </li>
                 <li class="product">
-                 
-                   
+
+
                     <img
                           alt=""
                           class="attachment-shop_catalog no"
@@ -1083,9 +1048,9 @@
                     <h3>
                       Totolink EX200 - Bộ Mở Rộng Sóng Wifi Chuẩn N Tốc Độ 300Mbps
                     </h3>
-          
+
                     <span class="price">
-                    
+
                       <ins> <span class="amount">233.000 Fcfa</span> </ins>
 
                       <a href="detail.html">
@@ -1096,10 +1061,10 @@
                       <span class="add" style="position:absolute;right:25px;">
                         <img src="images/shopping-bags.png" style="width:30px;height:30px;">
                       </span>
-                      
+
                     </span>
-                  
-                 
+
+
                 </li>
                 <li class="product">
                     <img
@@ -1108,21 +1073,21 @@
                           src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
                           />
                     <h3>Tai Nghe JBL T450BT</h3>
-          
+
                     <span class="price">
-                    
+
                       <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
                       <a href="detail.html">
                         <span class="view" style="position:absolute;right:70px;">
                         <img src="images/eye.png" style="width:30px;height:30px;">
                       </span>
                       </a>
-                      
+
                       <span class="add" style="position:absolute;right:25px;">
                         <img src="images/shopping-bags.png" style="width:30px;height:30px;">
                       </span>
                     </span>
-                
+
                 </li>
                 <li class="product">
                   <img
@@ -1131,21 +1096,21 @@
                         src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
                         />
                   <h3>Tai Nghe JBL T450BT</h3>
-        
+
                   <span class="price">
-                  
+
                     <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
                     <a href="detail.html">
                       <span class="view" style="position:absolute;right:70px;">
                       <img src="images/eye.png" style="width:30px;height:30px;">
                     </span>
                     </a>
-                    
+
                     <span class="add" style="position:absolute;right:25px;">
                       <img src="images/shopping-bags.png" style="width:30px;height:30px;">
                     </span>
                   </span>
-              
+
               </li>
               <li class="product">
                 <img
@@ -1154,21 +1119,21 @@
                       src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
                       />
                 <h3>Tai Nghe JBL T450BT</h3>
-      
+
                 <span class="price">
-                
+
                   <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
                   <a href="detail.html">
                     <span class="view" style="position:absolute;right:70px;">
                     <img src="images/eye.png" style="width:30px;height:30px;">
                   </span>
                   </a>
-                  
+
                   <span class="add" style="position:absolute;right:25px;">
                     <img src="images/shopping-bags.png" style="width:30px;height:30px;">
                   </span>
                 </span>
-            
+
             </li>
             <li class="product">
               <img
@@ -1177,21 +1142,21 @@
                     src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
                     />
               <h3>Tai Nghe JBL T450BT</h3>
-    
+
               <span class="price">
-              
+
                 <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
                 <a href="detail.html">
                   <span class="view" style="position:absolute;right:70px;">
                   <img src="images/eye.png" style="width:30px;height:30px;">
                 </span>
                 </a>
-                
+
                 <span class="add" style="position:absolute;right:25px;">
                   <img src="images/shopping-bags.png" style="width:30px;height:30px;">
                 </span>
               </span>
-          
+
           </li>
           <li class="product">
             <img
@@ -1200,43 +1165,43 @@
                   src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
                   />
             <h3>Tai Nghe JBL T450BT</h3>
-  
+
             <span class="price">
-            
+
               <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
               <a href="detail.html">
                 <span class="view" style="position:absolute;right:70px;">
                 <img src="images/eye.png" style="width:30px;height:30px;">
               </span>
               </a>
-              
+
               <span class="add" style="position:absolute;right:25px;">
                 <img src="images/shopping-bags.png" style="width:30px;height:30px;">
               </span>
             </span>
-        
+
         </li>
               </ul>
             </div>
-        
+
     </div>
   </div>
 </section>
 <section class="meubles"></section>
 <!-------------------------------------------------------------------------------------------- //meubles  ---------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------- barner_02 -----------------------------------------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------------------------- barner_02 ----------------------------------------------------------------------------------------------------------->
 <section class="baner_02">
   <div class="info-bulle">
     <h3 class="title">Interieur resplandissant</h3>
     <p>Le juste parfais pour votre maison :-)</p>
       <a href="#" class="link"><p> decouvrir</p></a>
-    
+
   </div>
 </section>
 <!---------------------------------------------------------------------------------------------  //barner_02 --------------------------------------------------------------------------------------------------------->
 
 
-<!-- Footer -->
+
 <footer class="page-footer font-small blue-grey lighten-5">
 
    <div style="background-color: #02f5b89d;">
@@ -1378,7 +1343,74 @@
    <!-- Copyright -->
 
  </footer>
- <!-- Footer -->
+    <div class="row">
+        <div class="col-md-12" onclick="focuss(this)" style="position: fixed;z-index: 50;left: 0px;height: 130px;bottom: -12%;">
+            <div class="" role="tab" id="headingTwo1">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                   aria-expanded="false" aria-controls="collapseTwo1">
+                    <h5 class="mb-0 btn btn-danger">
+                        2 articles dans votre panier <i class="fas fa-angle-down rotate-icon"></i>
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseTwo1" style="background-color: white" class="collapse"  aria-labelledby="headingTwo1"
+                 data-parent="#accordionEx1">
+                <div class="custom-scrollbar">
+                    <ul class="list-inline list-group-flush">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <li class="list-inline-item" >
+                                    <div style="width: 80px" style="border-left: 10px solid rgba(128,128,128,0.2)">
+                                        <span class="badge badge-info ml-2 ">1</span>
+                                        <img alt="" class="attachment-shop_catalog " style="height: 80px" src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/v/e/vet%20vang%20(1).u2470.d20160606.t122127.jpg">
+                                        <i class="fa fa-trash text-danger"></i>
+
+
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div style="width: 80px">
+                                        <span class="badge badge-info ml-2 ">1</span>
+                                        <img alt="" class="attachment-shop_catalog " style="height: 80px" src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/v/e/vet%20vang%20(1).u2470.d20160606.t122127.jpg">
+                                        <i class="fa fa-trash text-danger"></i>
+                                    </div>
+                                </li>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6" style="margin-top: 20px">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <strong> Total article  :</strong>
+                                            </div>
+                                            <div class="col-md-6">
+                                                2
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 10px">
+                                            <div class="col-md-6" >
+                                                <strong>Sous total article :</strong>
+                                            </div>
+                                            <div class="col-md-6">
+                                                2000 CFA
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="margin-top: 20px">
+                                        <button type="button" class="btn btn-outline-success btn-rounded waves-effect"> <i class="fa fa-check"></i> Detail</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 <!------------------------------------------------------------------------------------------ //slide ------------------------------------------------------------------------------------------------------------>
@@ -1434,6 +1466,7 @@
     <!-- MDB core JavaScript -->
     <!-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script> -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
 
 </body>
