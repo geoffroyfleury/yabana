@@ -769,7 +769,7 @@ img.align-center {
   overflow-x: auto;
   overflow-y: hidden;
   list-style: none;
-  height: 300px;
+  height: 350px;
   margin: 0;
   min-width: 100%;
   padding: 0;
@@ -787,10 +787,10 @@ img.align-center {
   width: 32px;
 }
 .prev{
-  left: -9%;
+  left: -5%;
 }
 .next{
-  right: -9%;
+  right: -5%;
 }
 .woocommerce .mystyle-products::-webkit-scrollbar
 {
@@ -807,7 +807,8 @@ img.align-center {
   margin-bottom: 0;
 }
 .woocommerce .mystyle-products .product {
-  width: 250px;
+  height: 350px;
+  width: 16.67%;
   margin-bottom: 20px;
   position: relative;
   padding: 0px 10px;
@@ -957,19 +958,69 @@ img.align-center {
 
 
 /*********************************************************************** //sold ********************************************************************************************/
+/*********************************************************************** tout les barners ********************************************************************************************/
+.baner_01{
+  height: 40vh;
+  background: url(https://www.ikea.com/images/la-nouvelle-collection-foernyad-mot-qui-signifie-renouvellem-3d2fe1400db854ba436c73538f5d8e89.png?f=xxxl) center no-repeat;
+  background-size: cover;
+}
 
-/*********************************************************************** alt ********************************************************************************************/
-.alt{
+.baner_02{
+  height: 40vh;
+  background: url(http://www.canalvie.com/polopoly_fs/1.8549900.1541695023!/image/gadgets%20electroniques.jpg_gen/derivatives/cvlandscape_670_377/gadgets%20electroniques.jpg) center no-repeat;
+  background-size: cover;
+}
+
+
+.info-bulle{
+  position: relative;
+  background: rgba(255, 249, 249, 0.767);
+  height: 200px;
+  width: 500px;
+  top: 30%;
+  left: 15%;
+}
+
+.info-bulle .title{
+  padding-top: 40px;
+  margin-left: 25px;
+  text-align: left;
+  color: #5d5a5a;
+  font-weight: bold;
+}
+
+.info-bulle p{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.info-bulle .link{
+  text-align: center;
+}
+
+/*********************************************************************** //tout les barner ***************************************************************************************/
+
+
+/*********************************************************************** meuble ********************************************************************************************/
+.meubles{
   height: 50vh;
+  margin-top: 60px;
+}
+.meubles .title{
   margin: 60px 0;
 }
 
-.back img{
-  height: 500px;
-  width: 100%;
+.meubles .no{
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
-/*********************************************************************** //alt ********************************************************************************************/
+.meubles .mystyle-products .product:hover .no {
+  box-shadow: none !important;
+  
+}
+
+/*********************************************************************** //meuble ********************************************************************************************/
+
 /*********************************************************************** categorie ********************************************************************************************/
 
 .categorie{
@@ -977,7 +1028,10 @@ img.align-center {
   background: #d9d9d9;
   margin-top: 100px;
 }
-
+.p-40{
+  padding: 5px 200px;
+  margin-bottom: 90px;
+}
 .indigo{
   background-color: #02f5b89d !important;
 }
@@ -998,23 +1052,25 @@ img.align-center {
 }
 .intent{
   position: relative;
-  border-bottom: 1px solid #44474b;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .head.int{
   position: relative;
-  border-left: 3px solid rgba(2, 137, 97, 0.6);
+  
   margin: 5px 20px 10px;
   display: flex;
+  justify-content: center;
 }
 .int.head .tit{
   color: #44474b;
+  border-left: 3px solid rgba(2, 137, 97, 0.6);
   font-size: x-large;
   letter-spacing: 5px;
   font-weight: 700;
   font-family: Heebo;
   text-transform: capitalize;
   margin-right: 20px;
+  padding-left: 10px;
 }
 .int.head .qte{
   color: #fff;
@@ -1095,34 +1151,3 @@ img.align-center {
 }
 /*********************************************************************** //categorie ********************************************************************************************/
 
-/*********************************************************************** slide ********************************************************************************************/
-
-.slide{
-  height: 50vh;
-  margin: 90px 0;
-}
-.swiper-container {
-  width: 100%;
-  height: 50vh;
-}
-.swiper-container img{
-  height: 350px;
-  width: 250px;
-}
-
-.swiper-slide {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-/*********************************************************************** //slide ********************************************************************************************/
