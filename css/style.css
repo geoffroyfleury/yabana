@@ -815,11 +815,11 @@ img.align-center {
   margin-bottom: 0;
 }
 .woocommerce .mystyle-products .product {
-  height: 350px;
+  height: 330px;
   width: 16.67%;
-  margin-bottom: 20px;
+  margin: 10px  40px 10px 0;
   position: relative;
-  padding: 0px 10px;
+  padding: 0px 20px;
   display: inline-block;
   background: #fff;
 }
@@ -1010,6 +1010,10 @@ img.align-center {
 
 
 /*********************************************************************** meuble ********************************************************************************************/
+.all-1 .container{
+  padding: none !important;
+}
+
 .meubles{
   height: 50vh;
   margin-top: 60px;
@@ -1020,6 +1024,10 @@ img.align-center {
 
 .meubles .no{
   box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.meubles .mystyle-products .product{
+  width: 20% !important;
 }
 
 .meubles .mystyle-products .product:hover .no {
