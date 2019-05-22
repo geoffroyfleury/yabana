@@ -27,15 +27,18 @@
 
     <!--css file-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ele.css">
     <script>
+        var tra = 1;
 
         function nextStep(ele) {
-            ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft += 250
+            console.log()
+            ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft += ele.parentElement.children[ele.parentElement.childElementCount - 1].children[0].clientWidth
         }
         function prevStep(ele) {
-            ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft -= 250
+            ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft -= ele.parentElement.children[ele.parentElement.childElementCount - 1].children[0].clientWidth
         }
-        function focuss(ele) {
+        /*function focuss(ele) {
             if(tra == 1){
                 ele.style.bottom = 0;
             }
@@ -43,223 +46,285 @@
                 ele.style.bottom = -10%;
             }
 
-        }
+        }*/
     </script>
 
 </head>
 
 <body class="woocommerce">
+<header>
 
-    <!-- Main navigation -->
-    <header>
-      <!--Navbar-->
-
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
         <div class="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div class="sidebar">
-          <!--Accordion wrapper-->
-<div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
-<img src="images/chambre1.jpg" alt="" style="width:100%">
+            <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                <img src="images/chambre1.jpg" alt="" style="width:100%">
 
-<hr class="mb-0">
+                <hr class="mb-0">
 
-  <!-- Accordion card -->
-  <div class="card" style="">
+                <div class="card" style="">
 
-    <!-- Card header -->
-    <div class="card-header" role="tab" id="headingTwo1">
-      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
-        aria-expanded="false" aria-controls="collapseTwo1">
-        <h5 class="mb-0">
-          Meuble <i class="fas fa-angle-down rotate-icon"></i>
-        </h5>
-      </a>
-    </div>
-    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
-      data-parent="#accordionEx1">
-      <div class="card-body">
-        <div class="custom-scrollbar">
-          <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#" >Chambre à coucher</a>
-                </li>
-              <li class="list-group-item">
-                <a href="#">Salon</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">Sale a manger</a>
-                </li>
-              <li class="list-group-item">
-                <a href="#">Chambre bébé et enfant</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">Bureau</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">Cuisine</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">Sale de bain</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">Jardin, terasse et balcon</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#" >Buanderie</a>
-              </li>
-            </ul>
-        </div>
+                    <div class="card-header" role="tab" id="headingTwo1">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                           aria-expanded="false" aria-controls="collapseTwo1">
+                            <h5 class="mb-0">
+                                Meuble <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+                    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+                            <div class="custom-scrollbar">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="#" >Chambre à coucher</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Salon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale a manger</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Chambre bébé et enfant</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Bureau</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Cuisine</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale de bain</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Jardin, terasse et balcon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" >Buanderie</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-      </div>
-    </div>
+                        </div>
+                    </div>
 
-  </div>
-
-    <div class="card" style="">
-
-        <!-- Card header -->
-        <div class="card-header" role="tab" id="headingTwo1">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
-               aria-expanded="false" aria-controls="collapseTwo1">
-                <h5 class="mb-0">
-                    Meuble <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-            </a>
-        </div>
-
-        <!-- Card body -->
-        <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
-             data-parent="#accordionEx1">
-            <div class="card-body">
-                <div class="custom-scrollbar">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <a href="#" >Chambre à coucher</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Salon</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Sale a manger</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Chambre bébé et enfant</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Bureau</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Cuisine</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Sale de bain</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Jardin, terasse et balcon</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#" >Buanderie</a>
-                        </li>
-                    </ul>
                 </div>
 
+                <div class="card" style="">
+
+                    <div class="card-header" role="tab" id="headingTwo1">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                           aria-expanded="false" aria-controls="collapseTwo1">
+                            <h5 class="mb-0">
+                                Meuble <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+                            <div class="custom-scrollbar">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="#" >Chambre à coucher</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Salon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale a manger</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Chambre bébé et enfant</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Bureau</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Cuisine</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale de bain</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Jardin, terasse et balcon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" >Buanderie</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-header" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
+                           aria-expanded="false" aria-controls="collapseTwo21">
+                            <h5 class="mb-0">
+                                Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mb-0">
+
+                <div class="card">
+
+                    <div class="card-header" role="tab" id="headingThree31">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
+                           aria-expanded="false" aria-controls="collapseThree31">
+                            <h5 class="mb-0">
+                                Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mb-0">
+
             </div>
-        </div>
-
-    </div>
-
-    <!-- <hr class="mb-0"> -->
-    <!-- Accordion card -->
-
-  <!-- Accordion card -->
-  <div class="card">
-
-    <!-- Card header -->
-    <div class="card-header" role="tab" id="headingTwo2">
-      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
-        aria-expanded="false" aria-controls="collapseTwo21">
-        <h5 class="mb-0">
-          Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
-        </h5>
-      </a>
-    </div>
-
-    <!-- Card body -->
-    <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
-      data-parent="#accordionEx1">
-      <div class="card-body">
-
-      </div>
-    </div>
-
-  </div>
-
-  <hr class="mb-0">
-  <!-- Accordion card -->
-
-  <!-- Accordion card -->
-  <div class="card">
-
-    <!-- Card header -->
-    <div class="card-header" role="tab" id="headingThree31">
-      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
-        aria-expanded="false" aria-controls="collapseThree31">
-        <h5 class="mb-0">
-          Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
-        </h5>
-      </a>
-    </div>
-
-    <!-- Card body -->
-    <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
-      data-parent="#accordionEx1">
-      <div class="card-body">
-
-      </div>
-    </div>
-
-  </div>
-
-  <hr class="mb-0">
-  <!-- Accordion card -->
-
-</div>
-<!-- Accordion wrapper -->
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-        <ul class="navbar-nav mr-auto ml-auto">
 
-        </ul>
 
-        <!-- <form class="form-inline mr-auto ml-auto">
-            <div class="md-form mt-0 ">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <div class="md-form mt-0 search-nan">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             </div>
-        </form> -->
-        <div class="log mr-auto">
-            <ul>
-              <li>
-                    <a href="#"><img src="images/shopping-bag .png" alt="" style="height:30px;width:30px"></a>
-              </li>
-              <li>
-              <a href="#"><img src="images/user.png" alt="" style="height:30px;width:30px"></a>
-              </li>
-            </ul>
-        </div>
+            <nav id="dl-menu" class="dl-menuwrapper nav-main">
+                <button class="dl-trigger nav-handle">Menu</button>
+                <ul class="dl-menu nav-main-list">
+                    <li class="nav-main-item">
+                        <a href="#">Immobilier</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item">
+                                <a href="#">Meuble</a>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a href="#">Salle de Bain</a>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a href="#">Mobilier & Accesoir Exterieur</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Electromenager</a>
+                        <!--ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Camera &amp; Photo</a></li>
+                            <li class="nav-sub-item"><a href="#">TV &amp; Home Cinema</a></li>
+                            <li class="nav-sub-item"><a href="#">Phones</a></li>
+                            <li class="nav-sub-item"><a href="#">PC &amp; Video Games</a></li>
+                        </ul-->
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Piéces Auto</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item">
+                                <a href="#">BMW</a>
+                                <ul class="dl-submenu nav-sub-sub">
+                                    <li class="nav-sub-item"><a href="#">Pneux</a></li>
+                                    <li class="nav-sub-item"><a href="#">Carosserie</a></li>
+                                    <li class="nav-sub-item"><a href="#">Devanture</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a href="#">MERCEDES</a>
+                                <ul class="dl-submenu nav-sub-sub">
+                                    <li class="nav-sub-item"><a href="#">Pneux</a></li>
+                                    <li class="nav-sub-item"><a href="#">Carosserie</a></li>
+                                    <li class="nav-sub-item"><a href="#">Devanture</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Accesoir Femme</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Robe</a></li>
+                            <li class="nav-sub-item"><a href="#">Jupe</a></li>
+                            <li class="nav-sub-item"><a href="#">Pantalon</a></li>
+                            <li class="nav-sub-item">
+                                <a href="#">T-shirt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Accesoir Homme</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Robe</a></li>
+                            <li class="nav-sub-item"><a href="#">Jupe</a></li>
+                            <li class="nav-sub-item"><a href="#">Pantalon</a></li>
+                            <li class="nav-sub-item">
+                                <a href="#">T-shirt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Accesoir Enfant</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Robe</a></li>
+                            <li class="nav-sub-item"><a href="#">Jupe</a></li>
+                            <li class="nav-sub-item"><a href="#">Pantalon</a></li>
+                            <li class="nav-sub-item">
+                                <a href="#">T-shirt</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            </form>
+            <div class="log mr-auto">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/shopping-bag .png" alt="" style="height:30px;width:30px"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/user.png" alt="" style="height:30px;width:30px"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-</nav>
-        <div class="containerss">
-            <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
+    </nav>
+</header>
+<div class="containerss">
+            <div class="abss"></div>
+            <div class="button btnLeft" onclick="shiftLeft()"><img src="images/left-arrow.png" alt=""></div>
             <div class="cards-wrapper">
                 <ul class="cards__container">
-                    <li class="box" style="background: url('https://image.freepik.com/photos-gratuite/demon-voiture-sale-moteur-dynamo-au-garage_41043-2638.jpg') center no-repeat;"></li>
-                    <li class="box" style="background: url('https://image.freepik.com/photos-gratuite/femme-robe-verte-chapeau-fond-jaune_1303-10554.jpg')center no-repeat"></li>
-                    <li class="box" style="background: url('https://image.freepik.com/photos-gratuite/homme-travaillant-ordinateur-portable-dans-paysage-pittoresque_23-2148155063.jpg') center no-repeat"></li>
+                    <li class="box" style="background: url('images/demon-voiture-sale-moteur-dynamo-au-garage_41043-2638.jpg') center no-repeat;"></li>
+                    <li class="box" style="background: url('images/femme-robe-verte-chapeau-fond-jaune_1303-10554.jpg')center no-repeat"></li>
+                    <li class="box" style="background: url('images/homme-travaillant-ordinateur-portable-dans-paysage-pittoresque_23-2148155063.jpg') center no-repeat"></li>
                     <li class="box" style="background: url('images/3d-rendu-interieur-chambre-moderne-cadre-photo-vierge_1048-6464.jpg') center no-repeat"></li>
                     <li class="box" style="background: url('images/chambre1.jpg') center no-repeat"></li>
                     <li class="box box--hide" style="background: url('images/gadgets electroniques.jpg') center no-repeat"></li>
@@ -270,16 +335,9 @@
                     <div class="card__summary"> L'Immobilier, notre Affaire</div>
                 </div>
             </div>
-            <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+            <div class="button btnRight" onclick="shiftRight()"><img src="images/next%20(1).png" alt=""></div>
         </div>
-          </div>
-          <!-- Content -->
-        </div>
-        <!-- Mask & flexbox options-->
-      </div>
-      <!-- Full Page Intro -->
-    </header>
-    <!-- Main navigation -->
+
 
 <!--------------------------------------------------------------------------------------- les sold --------------------------------------------------------------------------------------------------------------->
 
@@ -290,177 +348,197 @@
 
 
             <div class="containers p-40">
-                <div class="head int"><span class="tit">Immobilier</span> <span class="qte">24 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
+                <div class="head int"><span class="tit">Immobilier</span> <span class="qte">24 Produits Disponibles</span> <a class="more">Voir Tout</a></div>
                 <div class="intent" id="meuble">
                     <img class="abs prev" onclick="prevStep(this)" src="images/left-arrow.png" alt="">
                     <img class="abs next" onclick="nextStep(this)" src="images/next%20(1).png" alt="">
                     <ul class="mystyle-products">
                         <li class="product">
-                            <a href="detail.html">
-                                <!--span class="onsale">Sale!</span-->
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/v/e/vet%20vang%20(1).u2470.d20160606.t122127.jpg"
-                                />
-                                <h3>Chuột Không Dây Logitech M238 Party</h3>
-                                <span class="price">
-                      <del> <span class="amount">399.000 ₫</span> </del>
-                      <ins> <span class="amount">269.000 ₫</span> </ins>
-                      <span class="sale-tag sale-tag-square">-33%</span>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-
                         </li>
                         <li class="product">
-                            <a href="detail.html">
-                                <span class="onsale">Sale!</span>
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/a/n/anker%202%20cong%20power%2024w_white%20(1).u2470.d20160609.t094609.jpg"
-                                />
-                                <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
-                                <span class="price">
-                      <ins> <span class="amount">439.000 ₫</span> </ins>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="images/0710997_PE727860_S5.JPG"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-
                         </li>
                         <li class="product">
-                            <a href="detail.html">
-                                <span class="onsale">24h</span>
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/e/x/ex200-1.u425.d20170309.t162916.175240.jpg"
-                                />
-                                <h3>
-                                    Totolink EX200 - Bộ Mở Rộng Sóng Wifi Chuẩn N Tốc Độ 300Mbps
-                                </h3>
-
-                                <span class="price">
-                      <del> <span class="amount">299.000 ₫</span> </del>
-                      <ins> <span class="amount">233.000 ₫</span> </ins>
-                      <span class="sale-tag sale-tag-square">-22%</span>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="images/450bt_black_angle_03-1606x1606px.u2769.d20170512.t164639.178330.jpg"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-
                         </li>
                         <li class="product">
-                            <a href="detail.html">
-                                <span class="onsale">Sale!</span>
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/4/5/450bt_black_angle_03-1606x1606px.u2769.d20170512.t164639.178330.jpg"
-                                />
-                                <h3>Tai Nghe JBL T450BT</h3>
-
-                                <span class="price">
-                      <del> <span class="amount">1.600.000 ₫</span> </del>
-                      <ins> <span class="amount">1.466.000 ₫</span> </ins>
-                      <span class="sale-tag sale-tag-square">-7%</span>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="images/moteur"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-
                         </li>
                         <li class="product">
-                            <a href="detail.html">
-                                <span class="onsale">Sale!</span>
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/d/s/dsc_0212.u425.d20160408.t134929.jpg"
-                                />
-                                <h3>Phụ Kiện Số/Loa nghe nhạc/Loa Bluetooth</h3>
-                                <span class="price">
-                      <ins> <span class="amount">750.000 ₫</span> </ins>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-
                         </li>
                         <li class="product">
-                            <a href="detail.html">
-                                <span class="onsale">Sale!</span>
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/d/i/divoom-airbeat-10-black-4_1.jpg"
-                                />
-                                <h3>Loa Di Động Divoom Airbeat 10 3.5W</h3>
-                                <span class="price">
-                      <del> <span class="amount">639.000 ₫</span> </del>
-                      <ins> <span class="amount">760.000 ₫</span> </ins>
-                      <span class="sale-tag sale-tag-square">-16%</span>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-
                         </li>
                         <li class="product">
-                            <a href="detail.html">
-                                <span class="onsale">Sale!</span>
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/1/4/1454517182000_img_582809_1.jpg"
-                                />
-                                <h3>Máy Ảnh Sony Alpha A6300 + Kit 16-50mm</h3>
-                                <span class="price">
-                      <del> <span class="amount">21.990.000 ₫</span> </del>
-                      <ins> <span class="amount">27.490.000 ₫</span> </ins>
-                      <span class="sale-tag sale-tag-square">-20%</span>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-                            <a href="#" class="btn btn-dark btn-circle btn-review" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion ion-ios-move"></i></a>
                         </li>
                         <li class="product">
-                            <a href="detail.html">
-                                <span class="onsale">Sale!</span>
-                                <img
-                                        alt=""
-                                        class="attachment-shop_catalog "
-                                        src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/1/4/1419_02_mypassportformac_hero_png_imgw_1000_1000.u689.d20161214.t120338.15169.jpg"
-                                />
-                                <h3>Ổ Cứng Di Động WD My Passport 1TB (ver 2016)</h3>
-                                <span class="price">
-                      <del> <span class="amount">1.699.000 ₫</span> </del>
-                      <ins> <span class="amount">1.890.000 ₫</span> </ins>
-                      <span class="sale-tag sale-tag-square">-11%</span>
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
                     </span>
-                            </a>
-                            <a class="button add_to_cart_button product_type_simple" rel="nofollow" href="#">
-                                Mua ngay
-                            </a>
-
+                        </li>
+                        <li class="product">
+                            <span class="onsale">Sale!</span>
+                            <img
+                                    alt=""
+                                    class="attachment-shop_catalog "
+                                    src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
+                            />
+                            <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
+                            <span class="price">
+                      <ins> <span class="amount">439.000 Fcfa</span> </ins>
+                      <a href="detail.html">
+                        <span class="view" style="position:absolute;right:70px;">
+                        <img src="images/eye.png" style="width:30px;height:30px;">
+                      </span>
+                      </a>
+                      <span class="add" style="position:absolute;right:25px;">
+                        <img src="images/shopping-bags.png" style="width:30px;height:30px;">
+                      </span>
+                    </span>
                         </li>
                     </ul>
                 </div>
 
             </div>
             <div class="containers p-40">
-              <div class="head int"><span class="tit">Immobilier</span> <span class="qte">24 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
+              <div class="head int"><span class="tit">Meubles</span> <span class="qte">54 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
               <div class="intent" id="meuble">
                   <img class="abs prev" onclick="prevStep(this)" src="images/left-arrow.png" alt="">
                   <img class="abs next" onclick="nextStep(this)" src="images/next%20(1).png" alt="">
@@ -630,7 +708,7 @@
 
           </div>
           <div class="containers p-40">
-            <div class="head int"><span class="tit">Immobilier</span> <span class="qte">24 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
+            <div class="head int"><span class="tit">Chaises</span> <span class="qte">14 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
             <div class="intent" id="meuble">
                 <img class="abs prev" onclick="prevStep(this)" src="images/left-arrow.png" alt="">
                 <img class="abs next" onclick="nextStep(this)" src="images/next%20(1).png" alt="">
@@ -800,7 +878,7 @@
 
         </div>
         <div class="containers p-40">
-          <div class="head int"><span class="tit">Immobilier</span> <span class="qte">24 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
+          <div class="head int"><span class="tit">Tables</span> <span class="qte">14 Produits Disponibles</span> <span class="more">Voir Tout</span></div>
           <div class="intent" id="meuble">
               <img class="abs prev" onclick="prevStep(this)" src="images/left-arrow.png" alt="">
               <img class="abs next" onclick="nextStep(this)" src="images/next%20(1).png" alt="">
@@ -1343,73 +1421,6 @@
    <!-- Copyright -->
 
  </footer>
-    <div class="row">
-        <div class="col-md-12" onclick="focuss(this)" style="position: fixed;z-index: 50;left: 0px;height: 130px;bottom: -12%;">
-            <div class="" role="tab" id="headingTwo1">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
-                   aria-expanded="false" aria-controls="collapseTwo1">
-                    <h5 class="mb-0 btn btn-danger">
-                        2 articles dans votre panier <i class="fas fa-angle-down rotate-icon"></i>
-                    </h5>
-                </a>
-            </div>
-            <div id="collapseTwo1" style="background-color: white" class="collapse"  aria-labelledby="headingTwo1"
-                 data-parent="#accordionEx1">
-                <div class="custom-scrollbar">
-                    <ul class="list-inline list-group-flush">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <li class="list-inline-item" >
-                                    <div style="width: 80px" style="border-left: 10px solid rgba(128,128,128,0.2)">
-                                        <span class="badge badge-info ml-2 ">1</span>
-                                        <img alt="" class="attachment-shop_catalog " style="height: 80px" src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/v/e/vet%20vang%20(1).u2470.d20160606.t122127.jpg">
-                                        <i class="fa fa-trash text-danger"></i>
-
-
-                                    </div>
-                                </li>
-                                <li class="list-inline-item">
-                                    <div style="width: 80px">
-                                        <span class="badge badge-info ml-2 ">1</span>
-                                        <img alt="" class="attachment-shop_catalog " style="height: 80px" src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/v/e/vet%20vang%20(1).u2470.d20160606.t122127.jpg">
-                                        <i class="fa fa-trash text-danger"></i>
-                                    </div>
-                                </li>
-
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6" style="margin-top: 20px">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <strong> Total article  :</strong>
-                                            </div>
-                                            <div class="col-md-6">
-                                                2
-                                            </div>
-                                        </div>
-                                        <div class="row" style="margin-top: 10px">
-                                            <div class="col-md-6" >
-                                                <strong>Sous total article :</strong>
-                                            </div>
-                                            <div class="col-md-6">
-                                                2000 CFA
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6" style="margin-top: 20px">
-                                        <button type="button" class="btn btn-outline-success btn-rounded waves-effect"> <i class="fa fa-check"></i> Detail</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
