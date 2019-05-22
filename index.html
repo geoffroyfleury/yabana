@@ -219,9 +219,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
 
 
-            <div class="md-form mt-0 search-nan">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            </div>
+            <section class="container">
+                <label for="search_bar">Rechercher</label>
+                <input class="search_bar" id="search_bar"
+                       onkeyup="function () {
+                             window.screenTop = document.getElementsByClassName('containerss')[0].clientHeight;}"
+                       name="search_bar"
+                       type="search"
+                       placeholder="Givenchy, Jeans, Spider-man">
+            </section>
             <nav id="dl-menu" class="dl-menuwrapper nav-main">
                 <button class="dl-trigger nav-handle">Menu</button>
                 <ul class="dl-menu nav-main-list">

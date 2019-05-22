@@ -243,7 +243,7 @@ line-height: 1.7;
 ----------------------------- */
 .search-nan{
     min-width: 50%;
-    display: none;
+    display: block;
 }
 @media (max-width: 600px) {
     .search-nan{
@@ -303,7 +303,7 @@ html {
 
 .woocommerce .mystyle-products .product {
   width: 25%;
-  
+
 }
 }
 /* body {
