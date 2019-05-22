@@ -1008,16 +1008,9 @@ section{
 
 /*********************************************************************** //sold ********************************************************************************************/
 /*********************************************************************** tout les barners ********************************************************************************************/
-.baner_01{
+.baner_01, .baner_02, .baner_03{
   height: 40vh;
-  background: url(https://www.ikea.com/images/la-nouvelle-collection-foernyad-mot-qui-signifie-renouvellem-3d2fe1400db854ba436c73538f5d8e89.png?f=xxxl) center no-repeat;
-  background-size: cover;
-}
-
-.baner_02{
-  height: 40vh;
-  background: url(http://www.canalvie.com/polopoly_fs/1.8549900.1541695023!/image/gadgets%20electroniques.jpg_gen/derivatives/cvlandscape_670_377/gadgets%20electroniques.jpg) center no-repeat;
-  background-size: cover;
+  background-size: cover !important;
 }
 
 
@@ -1041,6 +1034,7 @@ section{
 .info-bulle p{
   font-size: 20px;
   letter-spacing: 1px;
+    text-align: center;
 }
 
 .info-bulle .link{
