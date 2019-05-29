@@ -302,7 +302,7 @@ html {
 @media screen and (max-width: 1439px){
 
 .woocommerce .mystyle-products .product {
-  width: 25%;
+  width: 25% !important;
 
 }
 }
@@ -804,7 +804,7 @@ img.align-center {
   right: 0%;
   bottom: 0%;
   z-index: -99;
-  background: #f6c36a; /*linear-gradient(to right, #f6c36a,#62928e);
+  background: #d06f2224; /*linear-gradient(to right, #f6c36a,#62928e);
     -webkit-filter: blur(1px);*/
 }
 .abs{
@@ -1030,7 +1030,11 @@ section{
 /*
     Pannier
 */
-
+.notFound{
+  background: url("../images/404.jpg") no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed;
+}
 .hiden{
   position: fixed;z-index: 50;left: 0px; right: 0; height: 130px;bottom: -8%;
 }
@@ -1205,13 +1209,35 @@ section{
   max-height: 72px;
 }
 
-.card {
-  -webkit-box-shadow: none !important;
+.cardValidation {
+ /* -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+*/
+    width: 60%;
+    display: inline-block;
+    float: left;
 }
-
-.card-body{
-  height: 300px;
-
+.rel{
+    min-width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+}
+.rel ul{
+    padding: 0 20px;
+    width: 45%;
+    list-style: none;
+    display: inline-block;
+}
+.rel ul li{
+    font-size: .8em;
+}
+.rel ul.validationRigth li{
+    text-align: right;
+}
+.yabanaColor{
+    color: #d06f1a;
+}
+.yabanaBg{
+    background: #d06f1a;
 }
 
 .card .card-body .card-text{
@@ -1512,4 +1538,278 @@ Concernat le Caroussel
 }
 .btnRight{
   right: 4%;
+}
+
+
+
+/*****------------ Panier ----------******/
+section#pannier{
+  display: flex;
+}
+.pan_1{
+  flex: 3;
+}
+.pan_2{
+  flex: 1;
+}
+.pan_3{
+    width: 38%;
+    display: inline-block;
+}
+.pan_2 .interieur, .pan_3 .interieur{
+  padding: 30px 20px;
+}
+.interieur img{
+  max-width: 100% !important;
+}
+.interieur .card-header{
+  padding: 0 !important;
+}
+.pan_2, .pan_1 {
+  margin-top: 100px;
+}
+.item {
+  background: #fff;
+  position: relative;
+  float: left;
+  margin-top: 120px;
+  opacity: 1;
+  transform: scale(1);
+  width: 400px;
+  margin: 60px 20px 0px;
+}
+.item .imgcont img {
+  width: 170px;
+}
+.item.active .imgcont img {
+  width: 220px;
+  margin-top: 20px;
+}
+.item.active .titlesec {
+  width: 430px;
+}
+
+.item:first-child .prodnav .prev {
+  opacity: 0;
+}
+.item:last-child .prodnav .next {
+  opacity: 0;
+}
+
+.prodcont {
+  position: relative;
+  display: block;
+  padding: 5px 5px 45px;
+  box-shadow: -1px 7px 60px -10px #555;
+}
+.prodshade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 100px solid #d06f1aa8;
+  border-left: 130px solid #d06f1acf;
+  border-bottom: 100px solid transparent;
+  border-right: 130px solid transparent;
+}
+div.starratting i {
+  font-size: 10px;
+}
+.prodtitle {
+  z-index: 99;
+  display: block;
+  position: relative;
+  padding:2px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.starratting i {
+  color: #3E86C0;
+}
+.titlesec {
+  background-color: #fff;
+  padding: 10px 0 10px 45px;
+  margin: 5px 0;
+  clear: both;
+  display: table;
+  width: 100%;
+  color: #555;
+  position: relative;
+  width: 340px;
+  box-shadow: -1px 7px 35px -10px #333;
+}
+.titlesec h1 {
+  font-size: 1.3em;
+  margin: 12px 0;
+  font-weight: normal;
+  margin: 0;
+}
+.titlesec .prodleftdetails {
+  float: left;
+}
+.titlesec .prodleftdetails .prodsize {
+  font-size: 12px;
+  float: right;
+  margin-right: 8px;
+}
+.titlesec .prodrightdetails {
+  float: left;
+}
+.titlesec .prodrightdetails .prodqty {
+  font-size: 35px;
+  margin-left: 12px;
+}
+.prod-addtocardM {
+  position: absolute;
+  bottom: 3px;
+  right: 18px;
+  background-color: #d06f22;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px !important;
+  display: inline-block;
+  border-radius: 100%;
+  height: 50px;
+  line-height: 53px;
+  box-shadow: 0 0 10px 2px #ccc;
+  cursor: pointer;
+}
+.prod-addtocard img, .prod-addtocardM img{
+  margin-top: -24px !important;
+}
+.prod-addtocard {
+  position: absolute;
+  top: 3px;
+  right: 18px;
+  background-color: #d06f22;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px !important;
+  display: inline-block;
+  border-radius: 100%;
+  height: 50px;
+  line-height: 53px;
+  box-shadow: 0 0 10px 2px #ccc;
+  cursor: pointer;
+}
+.proddel {
+  color: #ffffff;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+}
+.imgcont,
+.prodpric {
+  text-align: center;
+}
+/*
+Suggestion Panier
+ */
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.none{
+  display: none !important;
+}
+.btn,
+.btn-large,
+.btn-small,
+.btn-flat {
+  border-radius: 4px;
+  font-weight: 500;
+}
+.stepper {
+  list-style: none !important;
+}
+.card-product {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  color: #444;
+}
+.card-product .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+}
+.card-product .card-body section + section {
+  margin-top: 1rem;
+}
+.card-product .card-body .product-title {
+  max-width: 80%;
+  font-size: 1.1rem;
+}
+.card-product .card-body .product-desc {
+  font-size: 0.8rem;
+  color: #dadada;
+  margin-top: 0.3rem;
+}
+.card-product .card-body h1 {
+  font-size: 0.8rem;
+}
+.card-product .card-body .sizes li {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #dadada;
+  margin-top: 0.3rem;
+}
+.card-product .card-body .colors {
+  margin-top: 0.3rem;
+}
+.card-product .card-body .colors .color {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #333;
+}
+.card-product .card-body .colors .color.circle {
+  border-radius: 50%;
+}
+.card-product .card-body .colors .red {
+  background: red;
+}
+.card-product .card-body .colors .green {
+  background: green;
+}
+.card-product .card-body .colors .blue {
+  background: blue;
+}
+.card-product .card-body .card-price {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #A762EB;
+}
+.card-product .card-action {
+  text-align: center;
+  display: flex;
+}
+.card-product .card-action a {
+  color: #A762EB;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+  background: #eee;
+  width: 100%;
+  transition: color 0.175s ease;
+}
+.card-product .card-action a:hover {
+  color: #C284FF;
+  background: #f1f1f1;
+}
+
+.addr{
+    color: #888;
 }

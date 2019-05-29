@@ -19,234 +19,318 @@
     <link href="css/mdb.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/detail.css">
-    <link rel="stylesheet" href="css/swiper.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css"> -->
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ele.css">
+
+    <script>
+      var tra = 1;
+
+      function nextStep(ele) {
+          console.log()
+          ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft += ele.parentElement.children[ele.parentElement.childElementCount - 1].children[0].clientWidth
+      }
+      function prevStep(ele) {
+          ele.parentElement.children[ele.parentElement.childElementCount - 1].scrollLeft -= ele.parentElement.children[ele.parentElement.childElementCount - 1].children[0].clientWidth
+      }
+      function focuss(ele) {
+          if(tra == 1){
+              ele.className = "shower";
+              tra = 0
+          }
+          else{
+              tra = 1;
+              ele.className = "hiden";
+          }
+
+      }
+  </script>
 </head>
 
 <body class="woocommerce">
-  <header>
-    <!--Navbar-->
+<header>
 
-              <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                <div class="menu-icon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="sidebar">
-                  <!--Accordion wrapper-->
-          <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
-          <img src="images/chambre1.jpg" alt="" style="width:100%">
-
-          <hr class="mb-0">
-
-          <!-- Accordion card -->
-          <div class="card" style="">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingTwo1">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
-                aria-expanded="false" aria-controls="collapseTwo1">
-                <h5 class="mb-0">
-                  Meuble <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-            <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
-              data-parent="#accordionEx1">
-              <div class="card-body">
-                <div class="custom-scrollbar">
-                  <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <a href="#" >Chambre à coucher</a>
-                        </li>
-                      <li class="list-group-item">
-                        <a href="#">Salon</a>
-                      </li>
-                      <li class="list-group-item">
-                        <a href="#">Sale a manger</a>
-                        </li>
-                      <li class="list-group-item">
-                        <a href="#">Chambre bébé et enfant</a>
-                      </li>
-                      <li class="list-group-item">
-                        <a href="#">Bureau</a>
-                      </li>
-                      <li class="list-group-item">
-                        <a href="#">Cuisine</a>
-                      </li>
-                      <li class="list-group-item">
-                        <a href="#">Sale de bain</a>
-                      </li>
-                      <li class="list-group-item">
-                        <a href="#">Jardin, terasse et balcon</a>
-                      </li>
-                      <li class="list-group-item">
-                        <a href="#" >Buanderie</a>
-                      </li>
-                    </ul>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-            <div class="card">
-
-                <!-- Card header -->
-                <div class="card-header" role="tab" id="headingTwo1">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
-                      aria-expanded="false" aria-controls="collapseTwo1">
-                        <h5 class="mb-0">
-                            Meuble <i class="fas fa-angle-down rotate-icon"></i>
-                        </h5>
-                    </a>
-                </div>
-
-                <!-- Card body -->
-                <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
-                    data-parent="#accordionEx1">
-                    <div class="card-body">
-                        <div class="custom-scrollbar">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <a href="#" >Chambre à coucher</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Salon</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Sale a manger</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Chambre bébé et enfant</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Bureau</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Cuisine</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Sale de bain</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Jardin, terasse et balcon</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#" >Buanderie</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- <hr class="mb-0"> -->
-            <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingTwo2">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
-                aria-expanded="false" aria-controls="collapseTwo21">
-                <h5 class="mb-0">
-                  Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
-              data-parent="#accordionEx1">
-              <div class="card-body">
-
-              </div>
-            </div>
-
-          </div>
-
-          <hr class="mb-0">
-          <!-- Accordion card -->
-
-          <!-- Accordion card -->
-          <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingThree31">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
-                aria-expanded="false" aria-controls="collapseThree31">
-                <h5 class="mb-0">
-                  Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-
-            <!-- Card body -->
-            <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
-              data-parent="#accordionEx1">
-              <div class="card-body">
-
-              </div>
-            </div>
-
-          </div>
-
-          <hr class="mb-0">
-          <!-- Accordion card -->
-
-          </div>
-          <!-- Accordion wrapper -->
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                <ul class="navbar-nav mr-auto ml-auto">
-
-                </ul>
-
-                <!-- <form class="form-inline mr-auto ml-auto">
-                    <div class="md-form mt-0 ">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                </form> -->
-                <div class="log mr-auto">
-                    <ul>
-                      <li>
-                            <a href="#"><img src="images/shopping-bag .png" alt="" style="height:30px;width:30px"></a>
-                      </li>
-                      <li>
-                      <a href="#"><img src="images/user.png" alt="" style="height:30px;width:30px"></a>
-                      </li>
-                    </ul>
-                </div>
-                </div>
-
-          </nav>
-         
-         
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <!-- Content -->
-      </div>
-      <!-- Mask & flexbox options-->
-    </div>
-    <!-- Full Page Intro -->
-  </header>
+        <div class="sidebar">
+            <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                <img src="images/chambre1.jpg" alt="" style="width:100%">
+
+                <hr class="mb-0">
+
+                <div class="card" style="">
+
+                    <div class="card-header" role="tab" id="headingTwo1">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                           aria-expanded="false" aria-controls="collapseTwo1">
+                            <h5 class="mb-0">
+                                Meuble <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+                    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+                            <div class="custom-scrollbar">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="#" >Chambre à coucher</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Salon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale a manger</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Chambre bébé et enfant</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Bureau</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Cuisine</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale de bain</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Jardin, terasse et balcon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" >Buanderie</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card" style="">
+
+                    <div class="card-header" role="tab" id="headingTwo1">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                           aria-expanded="false" aria-controls="collapseTwo1">
+                            <h5 class="mb-0">
+                                Meuble <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+                            <div class="custom-scrollbar">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="#" >Chambre à coucher</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Salon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale a manger</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Chambre bébé et enfant</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Bureau</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Cuisine</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Sale de bain</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Jardin, terasse et balcon</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" >Buanderie</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-header" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
+                           aria-expanded="false" aria-controls="collapseTwo21">
+                            <h5 class="mb-0">
+                                Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mb-0">
+
+                <div class="card">
+
+                    <div class="card-header" role="tab" id="headingThree31">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
+                           aria-expanded="false" aria-controls="collapseThree31">
+                            <h5 class="mb-0">
+                                Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
+                         data-parent="#accordionEx1">
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mb-0">
+
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+
+
+            <section class="container">
+                <label for="search_bar">Rechercher</label>
+                <input class="search_bar" id="search_bar"
+                       onkeyup="function () {
+                             window.screenTop = document.getElementsByClassName('containerss')[0].clientHeight;}"
+                       name="search_bar"
+                       type="search"
+                       placeholder="Givenchy, Jeans, Spider-man">
+            </section>
+            <nav id="dl-menu" class="dl-menuwrapper nav-main">
+                <button class="dl-trigger nav-handle">Menu</button>
+                <ul class="dl-menu nav-main-list">
+                    <li class="nav-main-item">
+                        <a href="#">Immobilier</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item">
+                                <a href="#">Meuble</a>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a href="#">Salle de Bain</a>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a href="#">Mobilier & Accesoir Exterieur</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Electromenager</a>
+                        <!--ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Camera &amp; Photo</a></li>
+                            <li class="nav-sub-item"><a href="#">TV &amp; Home Cinema</a></li>
+                            <li class="nav-sub-item"><a href="#">Phones</a></li>
+                            <li class="nav-sub-item"><a href="#">PC &amp; Video Games</a></li>
+                        </ul-->
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Piéces Auto</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item">
+                                <a href="#">BMW</a>
+                                <ul class="dl-submenu nav-sub-sub">
+                                    <li class="nav-sub-item"><a href="#">Pneux</a></li>
+                                    <li class="nav-sub-item"><a href="#">Carosserie</a></li>
+                                    <li class="nav-sub-item"><a href="#">Devanture</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-sub-item">
+                                <a href="#">MERCEDES</a>
+                                <ul class="dl-submenu nav-sub-sub">
+                                    <li class="nav-sub-item"><a href="#">Pneux</a></li>
+                                    <li class="nav-sub-item"><a href="#">Carosserie</a></li>
+                                    <li class="nav-sub-item"><a href="#">Devanture</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Accesoir Femme</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Robe</a></li>
+                            <li class="nav-sub-item"><a href="#">Jupe</a></li>
+                            <li class="nav-sub-item"><a href="#">Pantalon</a></li>
+                            <li class="nav-sub-item">
+                                <a href="#">T-shirt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Accesoir Homme</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Robe</a></li>
+                            <li class="nav-sub-item"><a href="#">Jupe</a></li>
+                            <li class="nav-sub-item"><a href="#">Pantalon</a></li>
+                            <li class="nav-sub-item">
+                                <a href="#">T-shirt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a href="#">Accesoir Enfant</a>
+                        <ul class="dl-submenu nav-sub-list">
+                            <li class="nav-sub-item"><a href="#">Robe</a></li>
+                            <li class="nav-sub-item"><a href="#">Jupe</a></li>
+                            <li class="nav-sub-item"><a href="#">Pantalon</a></li>
+                            <li class="nav-sub-item">
+                                <a href="#">T-shirt</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            </form>
+            <div class="log mr-auto">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/shopping-bag .png" alt="" style="height:30px;width:30px"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/user.png" alt="" style="height:30px;width:30px"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+</header>
   <!-- Main navigation -->
        <section class="product">
          <div class="container">
            <div class="row">
              <div class="col-md-6">
-              
+
               <div class="w3-content" style="max-width:1200px">
                 <img class="mySlides" src="https://ae01.alicdn.com/kf/HTB1EssjRVXXXXbVXVXXq6xXFXXXi/African-shirt-male-tops-print-short-sleeve-men-africa-t-shirt-fashion-traditional-design-o-neck.jpg_640x640.jpg" style="width:100%;display:none">
                 <img class="mySlides" src="https://ae01.alicdn.com/kf/HTB1EzILRVXXXXaLXpXXq6xXFXXXa/African-shirt-male-tops-print-short-sleeve-men-africa-t-shirt-fashion-traditional-design-o-neck.jpg_640x640.jpg" style="width:100%">
                 <img class="mySlides" src="https://ae01.alicdn.com/kf/HTB1EssjRVXXXXbVXVXXq6xXFXXXi/African-shirt-male-tops-print-short-sleeve-men-africa-t-shirt-fashion-traditional-design-o-neck.jpg_640x640.jpg" style="width:100%;display:none">
-              
+
                 <div class="w3-row-padding w3-section">
                   <div class="w3-col s4">
                     <img class="demo w3-opacity w3-hover-opacity-off" src="https://ae01.alicdn.com/kf/HTB1EssjRVXXXXbVXVXXq6xXFXXXi/African-shirt-male-tops-print-short-sleeve-men-africa-t-shirt-fashion-traditional-design-o-neck.jpg_640x640.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
@@ -260,10 +344,13 @@
                 </div>
               </div>
              </div>
-             <div class="col-md-6">
+             <div class="col-md-6 look">
                <div class="title">
                  <div class="title-1">
-                   <h4>product name</h4>
+                   <h4>product marque</h4>
+                 </div>
+                 <div class="title-2">
+                   <h6>product name</h6>
                  </div>
                  <div class="detail">
                    <p>lorem -- ipsum dolor sit amet consectetur lorem ipsum dolor sit amet </p>
@@ -272,19 +359,65 @@
                <div class="price">
                  <p>30 000 Fcfa</p>
                </div>
-               <div class="color">
-                 <button class="blanc"></button>
-                 <button class="red"></button>
-                 <button class="blue"></button>
-                 <button class="yellow"></button>
-                 <button class="pink"></button>
+
+               <div class="count">
+                 Quantité:
+                 <ul>
+                   <li>-</li>
+                   <li>1</li>
+                   <li>+</li>
+                 </ul>
+
                </div>
-             
+
+
+
+               <label for="modal-button" class="modal-button">choisir la couleur <img src="images/chevron-arrow-down.png"></label>
+                <input type="checkbox" id="modal-button">
+
+                <!--/.Modal-->
+                <div class="modal">
+                  <!--./Contenido del modal-->
+                  <div class="modal-inner">
+
+                    <!--./Es importante volver a colocar el mismo label del botón que abre el modal porque ahora tendrá la función de cerrarlo-->
+                      <label for="modal-button" class="modal-button modal-button-close">X</label>
+
+                    <h1>Hey par ici!!!</h1>
+                    <div class="detail-color">
+                      <a href="#"><img src="https://www.ikea.com/PIAimages/0448582_PE598249_S4.JPG?f=xxxs" alt=""></a>
+                      <a href="#"><img src="https://www.ikea.com/PIAimages/0448581_PE598250_S4.JPG?f=xxxs" alt=""></a>
+
+                    </div>
+
+                  </div>
+                </div>
+
+               <!-- <form class="choice">
+                  <select>
+                      <option value="" disabled selected>votre couleur</option>
+                      <option value="2">blanc</option>
+                      <option value="3">noir</option>
+                    </select>
+               </form> -->
+               <div class="color">
+
+
                <div class="love">
-                  <button>j'adore<i class="far fa-heart"></i></button>
-                  <div class="panier">
-                    <i class="fas fa-shopping-cart"></i>
-                   </div>
+                 <div class="size left">
+                    <select class="mdb-select md-form" searchable="Search here..">
+                        <option value="" disabled selected>choisissez la taille</option>
+                        <option value="1">XS</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="3">XL</option>
+                        <option value="3">XXL</option>
+                      </select>
+
+                 </div>
+                  <div class="panier right">
+                    <p>commander</p>
+                  </div>
                </div>
                <div class="paypal"></div>
                <hr>
@@ -292,423 +425,234 @@
                  <div class="simple"><i class="fas fa-truck"></i><span class="bold"> Livraison standart</span> à 3000 fcfa </div>
                  <div class="express"><i class="fas fa-shipping-fast"></i><span class="bold"> Livraison express </span> à 5000 fcfa </div>
                </div>
-               
+
              </div>
            </div>
          </div>
        </section>
        <hr>
-       <!--------------------------------------------------------------------------------------- similaires --------------------------------------------------------------------------------------------------------------->
-       <section class="similaire meme">
-          <div class="all-1">
-            <h1>Produits similaires</h1>
-              <div>
-                      <div class="container">
-                        <ul class="mystyle-products">
-                          <li class="product ">
-          
-                              <img  alt=""  class="attachment-shop_catalog no"  src="https://www.ikea.com/PIAimages/0710981_PE727863_S5.JPG?f=xs"
-                                    />
-                              <h3>Chuột Không Dây Logitech M238 Party</h3>
-                              <span class="price">
-          
-                                <ins> <span class="amount">269.000 Fcfa</span> </ins>
-                                <a href="detail.html">
-                                  <span class="view" style="position:absolute;right:70px;">
-                                  <img src="images/eye.png" style="width:30px;height:30px;">
-                                </span>
-                                </a>
-                                <span class="add" style="position:absolute;right:25px;">
-                                  <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                </span>
-          
-                              </span>
-          
-                          </li>
-                          <li class="product">
-                              <img
-                                    alt=""
-                                    class="attachment-shop_catalog "
-                                    src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
-                                    />
-                              <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
-                              <span class="price">
-                                <ins> <span class="amount">439.000 Fcfa</span> </ins>
-                                <a href="detail.html">
-                                  <span class="view" style="position:absolute;right:70px;">
-                                  <img src="images/eye.png" style="width:30px;height:30px;">
-                                </span>
-                                </a>
-                                <span class="add" style="position:absolute;right:25px;">
-                                  <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                </span>
-                              </span>
-          
-          
-                          </li>
-                          <li class="product">
-          
-          
-                              <img
-                                    alt=""
-                                    class="attachment-shop_catalog no"
-                                    src="https://www.ikea.com/PIAimages/0710997_PE727860_S5.JPG?f=xs"
-                                    />
-                              <h3>
-                                Totolink EX200 - Bộ Mở Rộng Sóng Wifi Chuẩn N Tốc Độ 300Mbps
-                              </h3>
-          
-                              <span class="price">
-          
-                                <ins> <span class="amount">233.000 Fcfa</span> </ins>
-          
-                                <a href="detail.html">
-                                  <span class="view" style="position:absolute;right:70px;">
-                                  <img src="images/eye.png" style="width:30px;height:30px;">
-                                </span>
-                                </a>
-                                <span class="add" style="position:absolute;right:25px;">
-                                  <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                </span>
-          
-                              </span>
-          
-          
-                          </li>
-                          <li class="product">
-                              <img
-                                    alt=""
-                                    class="attachment-shop_catalog "
-                                    src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                                    />
-                              <h3>Tai Nghe JBL T450BT</h3>
-          
-                              <span class="price">
-          
-                                <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                                <a href="detail.html">
-                                  <span class="view" style="position:absolute;right:70px;">
-                                  <img src="images/eye.png" style="width:30px;height:30px;">
-                                </span>
-                                </a>
-          
-                                <span class="add" style="position:absolute;right:25px;">
-                                  <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                </span>
-                              </span>
-          
-                          </li>
-                          <li class="product">
-                            <img
-                                  alt=""
-                                  class="attachment-shop_catalog "
-                                  src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                                  />
-                            <h3>Tai Nghe JBL T450BT</h3>
-          
-                            <span class="price">
-          
-                              <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                              <a href="detail.html">
-                                <span class="view" style="position:absolute;right:70px;">
-                                <img src="images/eye.png" style="width:30px;height:30px;">
-                              </span>
-                              </a>
-          
-                              <span class="add" style="position:absolute;right:25px;">
-                                <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                              </span>
-                            </span>
-          
-                        </li>
-                        <li class="product">
-                          <img
-                                alt=""
-                                class="attachment-shop_catalog "
-                                src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                                />
-                          <h3>Tai Nghe JBL T450BT</h3>
-          
-                          <span class="price">
-          
-                            <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                            <a href="detail.html">
-                              <span class="view" style="position:absolute;right:70px;">
-                              <img src="images/eye.png" style="width:30px;height:30px;">
-                            </span>
-                            </a>
-          
-                            <span class="add" style="position:absolute;right:25px;">
-                              <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                            </span>
-                          </span>
-          
-                      </li>
-                      <li class="product">
-                        <img
-                              alt=""
-                              class="attachment-shop_catalog "
-                              src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                              />
-                        <h3>Tai Nghe JBL T450BT</h3>
-          
-                        <span class="price">
-          
-                          <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                          <a href="detail.html">
-                            <span class="view" style="position:absolute;right:70px;">
-                            <img src="images/eye.png" style="width:30px;height:30px;">
-                          </span>
-                          </a>
-          
-                          <span class="add" style="position:absolute;right:25px;">
-                            <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                          </span>
-                        </span>
-          
-                    </li>
-                    <li class="product">
-                      <img
-                            alt=""
-                            class="attachment-shop_catalog "
-                            src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                            />
-                      <h3>Tai Nghe JBL T450BT</h3>
-          
-                      <span class="price">
-          
-                        <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                        <a href="detail.html">
-                          <span class="view" style="position:absolute;right:70px;">
-                          <img src="images/eye.png" style="width:30px;height:30px;">
-                        </span>
-                        </a>
-          
-                        <span class="add" style="position:absolute;right:25px;">
-                          <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                        </span>
-                      </span>
-          
-                  </li>
-                        </ul>
-                      </div>
-          
+
+       <!------------------------------------------------------------------------------------------- detail ----------------------------------------------------------------------------------------------------------->
+       <section class="details">
+         <div class="container">
+            <div class="all">
+                <ul class="nav nav-tabs nav-justified md-tabs" id="myTabJust" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab" aria-controls="home-just"
+                    aria-selected="true">Description</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab" aria-controls="profile-just"
+                    aria-selected="false">Livraison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link" id="contact-tab-just" data-toggle="tab" href="#contact-just" role="tab" aria-controls="contact-just"
+                    aria-selected="false">Avis</a>
+                </li>
+              </ul>
+              <div class="tab-content card pt-5" id="myTabContentJust">
+                <div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
+                  <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                    synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+                    retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                    placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
+                  <h4><img src="images/check.png" alt=""> La qualité au meilleur prix</h4>
+                  <h4><img src="images/check.png" alt=""> Livraison et retour payant</h4>
+                  <br>
+                  <h4><img src="images/van.png" alt=""> Livraison standart </h4><p>3500Fcfa</p>
+                  <h4><img src="images/van.png" alt=""> Livraison Express</h4><p>7000Fcfa</p>
+                </div>
+                <div class="tab-pane fade" id="contact-just" role="tabpanel" aria-labelledby="contact-tab-just">
+
+                </div>
+              </div>
               </div>
             </div>
        </section>
+       <!-------------------------------------------------------------------------------------------- //detail ----------------------------------------------------------------------------------------------------------->
+       <!--------------------------------------------------------------------------------------- similaires --------------------------------------------------------------------------------------------------------------->
+       <section class="baner_01" style='background: url("https://www.ikea.com/images/la-nouvelle-collection-foernyad-mot-qui-signifie-renouvellem-3d2fe1400db854ba436c73538f5d8e89.png") center'>
+        <div class="info-bulle">
+          <h3 class="title">Super!!!</h3>
+          <p>nous avons d'autres produit qui peuvent vous interèsser </p>
 
-<hr>
+        </div>
+      </section>
+     <section class="similaires meme">
+       <div class="container">
+         <h1>Produit similaires</h1>
+         <div class="row">
+           <div class="col-md-3 col-sm-6 col-xs-6">
+             <div class="cart">
+               <div class="cart-head">
+                 <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+               </div>
+               <div class="cart-content">
+                 <span class="small">lorem ipsum dolor sit amte consectteur</span>
+                 <div class="left">
+                  <p class="prices">240 000 Fcfa</p>
+                 </div>
+
+                  <div class="right">
+                    <img src="images/eye.png">
+                    <img src="images/shopping-bags.png">
+                   </div>
+
+               </div>
+             </div>
+           </div>
+           <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="cart">
+              <div class="cart-head">
+                <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+              </div>
+              <div class="cart-content">
+                  <span class="small">lorem ipsum dolor sit amte consectteur</span>
+                  <div class="left">
+                   <p class="prices">240 000 Fcfa</p>
+                  </div>
+
+                   <div class="right">
+                     <img src="images/eye.png">
+                     <img src="images/shopping-bags.png">
+                    </div>
+              </div>
+            </div>
+           </div>
+           <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="cart">
+              <div class="cart-head">
+                <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+              </div>
+              <div class="cart-content">
+                  <span class="small">lorem ipsum dolor sit amte consectteur</span>
+                  <div class="left">
+                   <p class="prices">240 000 Fcfa</p>
+                  </div>
+
+                   <div class="right">
+                     <img src="images/eye.png">
+                     <img src="images/shopping-bags.png">
+                    </div>
+              </div>
+            </div>
+
+           </div>
+           <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="cart">
+              <div class="cart-head">
+                <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+              </div>
+              <div class="cart-content">
+                  <span class="small">lorem ipsum dolor sit amte consectteur</span>
+                  <div class="left">
+                   <p class="prices">240 000 Fcfa</p>
+                  </div>
+
+                   <div class="right">
+                     <img src="images/eye.png">
+                     <img src="images/shopping-bags.png">
+                    </div>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+     </section>
        <!--------------------------------------------------------------------------------------- //similaires --------------------------------------------------------------------------------------------------------------->
 
-       <!--------------------------------------------------------------------------------------- interessé --------------------------------------------------------------------------------------------------------------->
-       <section class="interesse meme">
-          <div class="all-1">
-              <h1>vous allez aimer</h1>
-                <div>
-                        <div class="container">
-                          <ul class="mystyle-products">
-                            <li class="product ">
-            
-                                <img  alt=""  class="attachment-shop_catalog no"  src="https://www.ikea.com/PIAimages/0710981_PE727863_S5.JPG?f=xs"
-                                      />
-                                <h3>Chuột Không Dây Logitech M238 Party</h3>
-                                <span class="price">
-            
-                                  <ins> <span class="amount">269.000 Fcfa</span> </ins>
-                                  <a href="detail.html">
-                                    <span class="view" style="position:absolute;right:70px;">
-                                    <img src="images/eye.png" style="width:30px;height:30px;">
-                                  </span>
-                                  </a>
-                                  <span class="add" style="position:absolute;right:25px;">
-                                    <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                  </span>
-            
-                                </span>
-            
-                            </li>
-                            <li class="product">
-                                <img
-                                      alt=""
-                                      class="attachment-shop_catalog "
-                                      src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs"
-                                      />
-                                <h3>Adapter Sạc Anker PowerPort 2 Cổng USB -...</h3>
-                                <span class="price">
-                                  <ins> <span class="amount">439.000 Fcfa</span> </ins>
-                                  <a href="detail.html">
-                                    <span class="view" style="position:absolute;right:70px;">
-                                    <img src="images/eye.png" style="width:30px;height:30px;">
-                                  </span>
-                                  </a>
-                                  <span class="add" style="position:absolute;right:25px;">
-                                    <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                  </span>
-                                </span>
-            
-            
-                            </li>
-                            <li class="product">
-            
-            
-                                <img
-                                      alt=""
-                                      class="attachment-shop_catalog no"
-                                      src="https://www.ikea.com/PIAimages/0710997_PE727860_S5.JPG?f=xs"
-                                      />
-                                <h3>
-                                  Totolink EX200 - Bộ Mở Rộng Sóng Wifi Chuẩn N Tốc Độ 300Mbps
-                                </h3>
-            
-                                <span class="price">
-            
-                                  <ins> <span class="amount">233.000 Fcfa</span> </ins>
-            
-                                  <a href="detail.html">
-                                    <span class="view" style="position:absolute;right:70px;">
-                                    <img src="images/eye.png" style="width:30px;height:30px;">
-                                  </span>
-                                  </a>
-                                  <span class="add" style="position:absolute;right:25px;">
-                                    <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                  </span>
-            
-                                </span>
-            
-            
-                            </li>
-                            <li class="product">
-                                <img
-                                      alt=""
-                                      class="attachment-shop_catalog "
-                                      src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                                      />
-                                <h3>Tai Nghe JBL T450BT</h3>
-            
-                                <span class="price">
-            
-                                  <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                                  <a href="detail.html">
-                                    <span class="view" style="position:absolute;right:70px;">
-                                    <img src="images/eye.png" style="width:30px;height:30px;">
-                                  </span>
-                                  </a>
-            
-                                  <span class="add" style="position:absolute;right:25px;">
-                                    <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                  </span>
-                                </span>
-            
-                            </li>
-                            <li class="product">
-                              <img
-                                    alt=""
-                                    class="attachment-shop_catalog "
-                                    src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                                    />
-                              <h3>Tai Nghe JBL T450BT</h3>
-            
-                              <span class="price">
-            
-                                <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                                <a href="detail.html">
-                                  <span class="view" style="position:absolute;right:70px;">
-                                  <img src="images/eye.png" style="width:30px;height:30px;">
-                                </span>
-                                </a>
-            
-                                <span class="add" style="position:absolute;right:25px;">
-                                  <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                                </span>
-                              </span>
-            
-                          </li>
-                          <li class="product">
-                            <img
-                                  alt=""
-                                  class="attachment-shop_catalog "
-                                  src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                                  />
-                            <h3>Tai Nghe JBL T450BT</h3>
-            
-                            <span class="price">
-            
-                              <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                              <a href="detail.html">
-                                <span class="view" style="position:absolute;right:70px;">
-                                <img src="images/eye.png" style="width:30px;height:30px;">
-                              </span>
-                              </a>
-            
-                              <span class="add" style="position:absolute;right:25px;">
-                                <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                              </span>
-                            </span>
-            
-                        </li>
-                        <li class="product">
-                          <img
-                                alt=""
-                                class="attachment-shop_catalog "
-                                src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                                />
-                          <h3>Tai Nghe JBL T450BT</h3>
-            
-                          <span class="price">
-            
-                            <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                            <a href="detail.html">
-                              <span class="view" style="position:absolute;right:70px;">
-                              <img src="images/eye.png" style="width:30px;height:30px;">
-                            </span>
-                            </a>
-            
-                            <span class="add" style="position:absolute;right:25px;">
-                              <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                            </span>
-                          </span>
-            
-                      </li>
-                      <li class="product">
-                        <img
-                              alt=""
-                              class="attachment-shop_catalog "
-                              src="https://www.ikea.com/PIAimages/0670473_PE715524_S5.JPG?f=xs"
-                              />
-                        <h3>Tai Nghe JBL T450BT</h3>
-            
-                        <span class="price">
-            
-                          <ins> <span class="amount">1.466.000 Fcfa</span> </ins>
-                          <a href="detail.html">
-                            <span class="view" style="position:absolute;right:70px;">
-                            <img src="images/eye.png" style="width:30px;height:30px;">
-                          </span>
-                          </a>
-            
-                          <span class="add" style="position:absolute;right:25px;">
-                            <img src="images/shopping-bags.png" style="width:30px;height:30px;">
-                          </span>
-                        </span>
-            
-                    </li>
-                          </ul>
-                        </div>
-            
-                </div>
-              </div>
-         </section>
-
-       </section>
-       <!--------------------------------------------------------------------------------------- //interessé --------------------------------------------------------------------------------------------------------------->
-
  <hr>
+ <!--------------------------------------------------------------------------------------- interesse --------------------------------------------------------------------------------------------------------------->
+ <section class="interesse meme">
+    <div class="container">
+      <h1>Etes vous interressé?</h1>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="cart">
+            <div class="cart-head">
+              <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+            </div>
+            <div class="cart-content">
+              <span class="small">lorem ipsum dolor sit amte consectteur</span>
+              <div class="left">
+               <p class="prices">240 000 Fcfa</p>
+              </div>
+
+               <div class="right">
+                 <img src="images/eye.png">
+                 <img src="images/shopping-bags.png">
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+         <div class="cart">
+           <div class="cart-head">
+             <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+           </div>
+           <div class="cart-content">
+               <span class="small">lorem ipsum dolor sit amte consectteur</span>
+               <div class="left">
+                <p class="prices">240 000 Fcfa</p>
+               </div>
+
+                <div class="right">
+                  <img src="images/eye.png">
+                  <img src="images/shopping-bags.png">
+                 </div>
+           </div>
+         </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+         <div class="cart">
+           <div class="cart-head">
+             <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+           </div>
+           <div class="cart-content">
+               <span class="small">lorem ipsum dolor sit amte consectteur</span>
+               <div class="left">
+                <p class="prices">240 000 Fcfa</p>
+               </div>
+
+                <div class="right">
+                  <img src="images/eye.png">
+                  <img src="images/shopping-bags.png">
+                 </div>
+           </div>
+         </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+         <div class="cart">
+           <div class="cart-head">
+             <img src="https://www.ikea.com/PIAimages/0710939_PE727856_S5.JPG?f=xs" alt="">
+           </div>
+           <div class="cart-content">
+               <span class="small">lorem ipsum dolor sit amte consectteur</span>
+               <div class="left">
+                <p class="prices">240 000 Fcfa</p>
+               </div>
+
+                <div class="right">
+                  <img src="images/eye.png">
+                  <img src="images/shopping-bags.png">
+                 </div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--------------------------------------------------------------------------------------- //interesse --------------------------------------------------------------------------------------------------------------->
 
 
        <!-- Footer -->
 <footer class="page-footer font-small blue-grey lighten-5">
 
-  <div style="background-color: #02f5b89d;">
+  <div style="background-color: #d06f1a;">
     <div class="container">
 
       <!-- Grid row-->
@@ -841,8 +785,8 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center text-black-50 py-3">© 2018 Copyright:
-    <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center text-black-50 py-3">Design by:
+    <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"> XXI</a>
   </div>
   <!-- Copyright -->
 
@@ -850,33 +794,15 @@
 <!-- Footer -->
 
 
-    
-        
+
+
     <!-- SCRIPTS -->
-
-    <script>
-        var myIndex = 0;
-        caroussel();
-        function caroussel() {
-            var i;
-            var x = document.getElementsByClassName("mySlyde")
-            for(i=0; i< x.length; i++){
-                x[i].style.display = 'none';
-            }
-            myIndex++;
-            if(myIndex>x.length){myIndex=1}
-            x[myIndex-1].style.display='block';
-            setTimeout(caroussel ,10000);
-        }
-    </script>
-
-
 
     <script>
       function currentDiv(n) {
         showDivs(slideIndex = n);
       }
-      
+
       function showDivs(n) {
         var i;
         var x = document.getElementsByClassName("mySlides");
@@ -895,8 +821,7 @@
       </script>
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="js/jquery 3.3.1.js" ></script>
 
         <script>
           $(document).ready(function(){
@@ -911,9 +836,8 @@
 
     <!-- Tooltips -->
     <!-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script> -->
-    <script src="js/swiper.js"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- <script src="js/swiper.js"></script>
 
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -944,12 +868,8 @@
           }
         });
       </script>
-   
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
-    <!-- MDB core JavaScript -->
-    <!-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script> -->
+    -->
+    <script src="js/bootstrap.min.js" ></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
 </body>
